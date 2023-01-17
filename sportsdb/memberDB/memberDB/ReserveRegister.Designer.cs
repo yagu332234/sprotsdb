@@ -54,7 +54,7 @@ namespace memberDB
             this.backButton.TabIndex = 3;
             this.backButton.Text = "戻る";
             this.backButton.UseVisualStyleBackColor = true;
-            this.backButton.Click += new System.EventHandler(this.backButtonClick);
+            this.backButton.Click += new System.EventHandler(this.backButtonClick7);
             // 
             // nextButton
             // 

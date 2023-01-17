@@ -26,7 +26,7 @@ namespace memberDB
             reserveDelete.Show();
         }
 
-        private void backButtonClick(object sender, EventArgs e)
+        private void backButton6Click(object sender, EventArgs e)
         {
             //次画面を非表示
             this.Visible = false;

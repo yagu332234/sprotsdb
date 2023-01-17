@@ -19,7 +19,7 @@ namespace memberDB
 
        
 
-        private void backButtonClick(object sender, EventArgs e)
+        private void backButtonClick7(object sender, EventArgs e)
         {
             SceneChange(sender, e);
         }

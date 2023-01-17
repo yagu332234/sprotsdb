@@ -12,7 +12,7 @@ namespace memberDB
             InitializeComponent();
         }
 
-        private void backButtonClick(object sender, EventArgs e)
+        private void backButton3Click(object sender, EventArgs e)
         {
             //現在の画面を非表示
             this.Visible = false;

@@ -24,7 +24,7 @@ namespace memberDB
 
         }
 
-        private void backButtonClick(object sender, EventArgs e)
+        private void backButtonClick2(object sender, EventArgs e)
         {
             //現在の画面を非表示
             this.Visible = false;
