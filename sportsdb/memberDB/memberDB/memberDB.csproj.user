@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Compile Update="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="MemberDelete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="MemberStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="MemberUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ReserveUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="StartScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="RoginScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ReserveDelete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="NewRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ReserveOption.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ReserveRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>
