@@ -10,24 +10,28 @@ namespace memberDB
         {
             InitializeComponent();
         }
-  private void NewRegister_Load(object sender, EventArgs e)
-        {
-            
-        }
+
+        /// <summary>
+        /// 予約画面遷移
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void reserveButtonClick(object sender, EventArgs e)
         {
-            //現在の画面を閉じる
-            this.Visible = false;
-            ReserveOption ro = new ReserveOption();
-            ro.Show();
+            
+            //ReserveOption画面を表示
+            Program.mainPage.MainForm = new ReserveOption();
+            Program.mainPage.MainForm.Show();
+            //現在の画面を消す
+            this.Close();
         }
 
-        private void main_Load(object sender, EventArgs e)
-        {
 
-        }
-
-        //会員登録のテーブル作成
+        /// <summary>
+        /// 会員登録のテーブル作成
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void button5_Click(object sender, EventArgs e)
         {
             // コネクションを開いてテーブル作成して閉じる  
@@ -43,49 +47,64 @@ namespace memberDB
                 con.Close();
             }
         }
-
+        /// <summary>
+        /// 会員削除画面遷移
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void memberDeleteButtonClick(object sender, EventArgs e)
         {
-            //現在の画面を閉じる
-            this.Visible = false;
-            //会員削除画面を表示
-            MemberDelete md = new MemberDelete();
-            md.Show();
+            //MemberDelete画面を表示
+            Program.mainPage.MainForm = new MemberDelete();
+            Program.mainPage.MainForm.Show();
+            //現在の画面を消す
+            this.Close();
         }
-
+        /// <summary>
+        /// スタート画面遷移
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void backButtonClick(object sender, EventArgs e)
         {
-            //次画面を非表示
-            this.Visible = false;
-
             //start画面を表示
-            StartScreen startScreen = new StartScreen();
-            //画面表示
-            startScreen.Show();
+            Program.mainPage.MainForm = new StartScreen();
+            Program.mainPage.MainForm.Show();
+            //現在の画面を消す
+            this.Close();
         }
-
+        /// <summary>
+        /// 会員更新画面遷移
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void memberUpdateButtonClick(object sender, EventArgs e)
         {
-            //次画面を非表示
-            this.Visible = false;
-
-            //start画面を表示
-            MemberUpdate mu = new MemberUpdate();
-            //画面表示
-            mu.Show();
+           
+            //memberUpdate画面を表示
+            Program.mainPage.MainForm = new MemberUpdate();
+            Program.mainPage.MainForm.Show();
+            //現在の画面を消す
+            this.Close();
         }
-
-        private void button4_Click(object sender, EventArgs e)
+        /// <summary>
+        /// 会員情報画面遷移
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void memberStatusButtonClick(object sender, EventArgs e)
         {
-            //次画面を非表示
-            this.Visible = false;
-
-            //start画面を表示
-            会員情報表示 ms = new 会員情報表示();
-            //画面表示
-            ms.Show();
+            //MemberStatus画面を表示
+            Program.mainPage.MainForm = new MemberStatus ();
+            Program.mainPage.MainForm.Show();
+            //現在の画面を消す
+            this.Close();
         }
-
+        /// <summary>
+        /// 予約テーブル作成
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void button7_Click(object sender, EventArgs e)
         {
           
@@ -96,7 +115,7 @@ namespace memberDB
                 using (SQLiteCommand command = con.CreateCommand())
                 {
                     command.CommandText =
-                        "create table y_product(memberReserve INTEGER  PRIMARY KEY AUTOINCREMENT, memberId INTEGER, day TEXT, manager TEXT)";
+                        "create table reserveProduct(memberReserveId INTEGER  PRIMARY KEY AUTOINCREMENT, memberId INTEGER, day TEXT)";
                     command.ExecuteNonQuery();
                 }
                 con.Close();

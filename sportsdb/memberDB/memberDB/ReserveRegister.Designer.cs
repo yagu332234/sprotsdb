@@ -54,7 +54,7 @@ namespace memberDB
             this.backButton.TabIndex = 3;
             this.backButton.Text = "戻る";
             this.backButton.UseVisualStyleBackColor = true;
-            this.backButton.Click += new System.EventHandler(this.backButtonClick7);
+            this.backButton.Click += new System.EventHandler(this.backButtonClick);
             // 
             // nextButton
             // 
@@ -72,7 +72,6 @@ namespace memberDB
             this.monthCalendar1.Location = new System.Drawing.Point(229, 121);
             this.monthCalendar1.Name = "monthCalendar1";
             this.monthCalendar1.TabIndex = 5;
-            this.monthCalendar1.DateChanged += new System.Windows.Forms.DateRangeEventHandler(this.monthCalendar1_DateChanged);
             // 
             // ReserveRegister
             // 

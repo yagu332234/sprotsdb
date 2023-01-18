@@ -1,9 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Text;
 using System.Windows.Forms;
 using System.Data.SQLite;
 
@@ -15,31 +10,51 @@ namespace memberDB
         {
             InitializeComponent();
         }
-
-        private void memberRegisterButtonClick(object sender, EventArgs e)
+        /// <summary>
+        /// メイン画面遷移
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void mainButtonClick(object sender, EventArgs e)
         {
-            //次画面を非表示
-            this.Visible = false;
-            Main main = new Main();
-            main.Show();
+            
+            //Main画面を表示
+            Program.mainPage.MainForm = new Main();
+            Program.mainPage.MainForm.Show();
+            //現在の画面を消す
+            this.Close();
         }
-
+        /// <summary>
+        /// ログイン画面遷移
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void roginButtonClick(object sender, EventArgs e)
         {
-            //次画面を非表示
-            this.Visible = false;
-            RoginScreen rs = new RoginScreen();
-            rs.Show();
+            //ログイン画面を表示
+            Program.mainPage.MainForm = new RoginScreen();
+            Program.mainPage.MainForm.Show();
+            //現在の画面を消す
+            this.Close();
         }
-
+        /// <summary>
+        /// 新規登録画面遷移
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void newRegisterButtonClick(object sender, EventArgs e)
         {
-            //次画面を非表示
-            this.Visible = false;
-            NewRegister nr = new NewRegister();
-            nr.Show();
+            //新規登録画面を表示
+            Program.mainPage.MainForm = new NewRegister();
+            Program.mainPage.MainForm.Show();
+            //現在の画面を消す
+            this.Close();
         }
-
+        /// <summary>
+        /// 終了ボタン
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void exitButtonClick(object sender, EventArgs e)
         {
             //ポップアップの表示

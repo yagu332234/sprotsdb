@@ -14,13 +14,18 @@ namespace memberDB
         {
             InitializeComponent();
         }
-
-        private void button1_Click(object sender, EventArgs e)
+        /// <summary>
+        /// 戻るボタン
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void backButtonClick(object sender, EventArgs e)
         {
-            //次画面を非表示
-            this.Visible = false;
-            ReserveOption ro = new ReserveOption();
-            ro.Show();
+            //MemberStatus画面を表示
+            Program.mainPage.MainForm = new ReserveOption();
+            Program.mainPage.MainForm.Show();
+            //現在の画面を消す
+            this.Close();
         }
 
         private void reservebutton_Click(object sender, EventArgs e)

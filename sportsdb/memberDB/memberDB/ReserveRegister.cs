@@ -18,58 +18,73 @@ namespace memberDB
         }
 
        
-
-        private void backButtonClick7(object sender, EventArgs e)
+        /// <summary>
+        /// 戻る処理
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void backButtonClick(object sender, EventArgs e)
         {
             SceneChange(sender, e);
         }
-
+        /// <summary>
+        /// 画面遷移の処理
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void SceneChange(object sender, EventArgs e)
         {
-            //現在の画面を非表示
-            this.Visible = false;
-            ReserveOption reserveoption = new ReserveOption();
-            reserveoption.Show();
+            //ReserveOption画面を表示
+            Program.mainPage.MainForm = new ReserveOption();
+            Program.mainPage.MainForm.Show();
+            //現在の画面を消す
+            this.Close();
         }
 
-
+        /// <summary>
+        /// 予約登録
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void nextButtonClick(object sender, EventArgs e)
         {
-
-            Debug.Print(monthCalendar1.SelectionStart.ToShortDateString());
+            //日付を入れる変数（いらないかも）
+            string day1 = monthCalendar1.SelectionStart.ToShortDateString();
+            //確認用
+            Debug.Print(day1);
             DialogResult result = MessageBox.Show("本当にこの内容でよろしいですか？", "警告", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
             if (result == DialogResult.Yes)
             {
-                using (SQLiteConnection con = new SQLiteConnection("Data Source=register.db"))
+                using (SQLiteConnection con = new SQLiteConnection("Data Source=reserve.db"))
                 {
                     con.Open();
                     using (SQLiteTransaction trans = con.BeginTransaction())
                     {
                         SQLiteCommand cmd = con.CreateCommand();
                         //インサート
-                        cmd.CommandText = "INSERT INTO y_product(day)" +
-                            " VALUES(@Register_day)";
+                        cmd.CommandText = "INSERT INTO reserveProduct(day)" +
+                            " VALUES(@ReserveDay)";
                         //パラメータセット
                         //日付
-                        cmd.Parameters.Add("Register_day", System.Data.DbType.Int64);
-                       
+                        cmd.Parameters.Add("ReserveDay", System.Data.DbType.String);
+
                         //データ追加
-                        cmd.Parameters["Register_day"].Value = monthCalendar1.SelectionStart.ToShortDateString();
+                        cmd.Parameters["ReserveDay"].Value = day1;
                       
                         cmd.ExecuteNonQuery();
                         //コミット
                         trans.Commit();
 
+                        /*
+                          command.CommandText =
+                        "create table reserveProduct(memberReserveId INTEGER  PRIMARY KEY AUTOINCREMENT, memberId INTEGER, day TEXT)";
+                    command.ExecuteNonQuery();
+                         */
                     }
                 }
 
             }
         }
-
-        private void monthCalendar1_DateChanged(object sender, DateRangeEventArgs e)
-        {
-            Text = monthCalendar1.SelectionStart.ToShortDateString() + " ～" +
-                monthCalendar1.SelectionEnd.ToShortDateString();
-        }
+      
     }
 }

@@ -11,19 +11,26 @@ namespace memberDB
         {
             InitializeComponent();
         }
-
-        private void backButton3Click(object sender, EventArgs e)
+        /// <summary>
+        /// 戻るボタン
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void backButtonClick(object sender, EventArgs e)
         {
-            //現在の画面を非表示
-            this.Visible = false;
-
             //main画面を表示
-            Main main = new Main();
-            main.Show();
+            Program.mainPage.MainForm = new Main();
+            Program.mainPage.MainForm.Show();
+            //現在の画面を消す
+            this.Close();
         }
 
-
-        private void button2_Click(object sender, EventArgs e)
+        /// <summary>
+        /// id検索
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void idButtonClick(object sender, EventArgs e)
         {
             using (SQLiteConnection con = new SQLiteConnection("Data Source=register.db"))
             {
@@ -50,7 +57,11 @@ namespace memberDB
             }
            
         }
-
+        /// <summary>
+        /// 更新処理
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void updateButtonClick(object sender, EventArgs e)
         {
             DialogResult result = MessageBox.Show("本当にこの内容でよろしいですか？", "警告", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
@@ -62,7 +73,7 @@ namespace memberDB
                     using (SQLiteTransaction trans = con.BeginTransaction())
                     {
                         SQLiteCommand cmd = con.CreateCommand();
-                        //インサート
+                        //アップデート
                         cmd.CommandText = "UPDATE t_product set memberName = @Mname, memberHouse = @Mhouse, memberPhone = @Mphone, memberBirthday=@Mbirth, memberPassword=@Mpass WHERE memberId = @Mid";
                         //パラメータセット
                         cmd.Parameters.Add("Mid", System.Data.DbType.Int64);

@@ -8,6 +8,7 @@ namespace memberDB
 {
     static class Program
     {
+        public static ApplicationContext mainPage;
         /// <summary>
         ///  The main entry point for the application.
         /// </summary>
@@ -17,7 +18,9 @@ namespace memberDB
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new StartScreen());
+            mainPage = new ApplicationContext();
+            mainPage.MainForm = new StartScreen();
+            Application.Run(mainPage);
         }
     }
 }

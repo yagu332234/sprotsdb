@@ -83,7 +83,6 @@ namespace memberDB
 
                 //入力された項目を入れる
                  birthValue += birthInsertValue;
-
             };
 
             //ポップアップの表示

@@ -15,7 +15,11 @@ namespace memberDB
         {
             InitializeComponent();
         }
-
+        /// <summary>
+        /// データベース表示
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void button1_Click(object sender, EventArgs e)
         {
             using (SQLiteConnection conection = new SQLiteConnection("Data Source=reserve.db"))
@@ -23,54 +27,64 @@ namespace memberDB
                 //reservedbの生成
                 var dataTable = new DataTable();
                 //SQLの実行
-                var adapter = new SQLiteDataAdapter("SELECT * FROM y_product", conection);
+                var adapter = new SQLiteDataAdapter("SELECT * FROM reserveProduct", conection);
                 adapter.Fill(dataTable);
                 dataGridView1.DataSource = dataTable;
             }
         }
-
-        private void backButton_Click(object sender, EventArgs e)
+        /// <summary>
+        /// 戻るボタン
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void backButtonClick(object sender, EventArgs e)
         {
-            //現在の画面を閉じる
-            this.Visible = false;
-            ReserveOption reserveOption = new ReserveOption();
-            reserveOption.Show();
+            //ReserveOption画面を表示
+            Program.mainPage.MainForm = new ReserveOption();
+            Program.mainPage.MainForm.Show();
+            //現在の画面を消す
+            this.Close();
         }
-
-        private void button2_Click(object sender, EventArgs e)
+        /// <summary>
+        /// 更新処理
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void updateButtonClick(object sender, EventArgs e)
         {
-            /*  DialogResult result = MessageBox.Show("本当にこの内容でよろしいですか？", "警告", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
-              if (result == DialogResult.Yes)
-              {
-                  using (SQLiteConnection con = new SQLiteConnection("Data Source=register.db"))
-                  {
-                      con.Open();
-                      using (SQLiteTransaction trans = con.BeginTransaction())
-                      {
-                          SQLiteCommand cmd = con.CreateCommand();
-                          //インサート
-                          cmd.CommandText = "UPDATE t_product set memberName = @Mname, memberHouse = @Mhouse, memberPhone = @Mphone, memberBirthday=@Mbirth, memberPassword=@Mpass WHERE memberId = @Mid";
-                          //パラメータセット
-                          cmd.Parameters.Add("Mid", System.Data.DbType.Int64);
-                          cmd.Parameters.Add("Mname", System.Data.DbType.String);
-                          cmd.Parameters.Add("Mhouse", System.Data.DbType.String);
-                          cmd.Parameters.Add("Mphone", System.Data.DbType.String);
-                          cmd.Parameters.Add("Mbirth", System.Data.DbType.String);
-                          cmd.Parameters.Add("Mpass", System.Data.DbType.String);
-                          //データ追加
-                          cmd.Parameters["Mid"].Value = int.Parse(memberIdBox.Text);
-                          cmd.Parameters["Mname"].Value = memberNameBox.Text;
-                          cmd.Parameters["Mhouse"].Value = memberHouseBox.Text;
-                          cmd.Parameters["Mphone"].Value = memberPhoneBox.Text;
-                          cmd.Parameters["Mbirth"].Value = memberBirthBox.Text;
-                          cmd.Parameters["Mpass"].Value = memberPassBox.Text;
-                          cmd.ExecuteNonQuery();
-                          //
-                          trans.Commit();
 
-                      }
-            */
+            DialogResult result = MessageBox.Show("本当にこの内容でよろしいですか？", "警告", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (result == DialogResult.Yes)
+            {
+                using (SQLiteConnection con = new SQLiteConnection("Data Source=reserve.db"))
+                {
 
+                    con.Open();
+                    using (SQLiteTransaction trans = con.BeginTransaction())
+                    {
+                        SQLiteCommand cmd = con.CreateCommand();
+                        //インサート
+                        cmd.CommandText = "UPDATE reserveProduct set day = @Day memberId=@MemberId WHERE memberReserveId = @MemberReserveId";
+                        //パラメータセット
+                        cmd.Parameters.Add("MemberReserveId", System.Data.DbType.Int64);
+                        cmd.Parameters.Add("Day", System.Data.DbType.String);
+                        //データ追加
+                        cmd.Parameters["MemberReserveId"].Value = int.Parse(memberIdBox.Text);
+                        cmd.Parameters["Day"].Value = monthCalendar1.SelectionStart.ToShortDateString();
+
+                        cmd.ExecuteNonQuery();
+                        //
+                        trans.Commit();
+                        /*
+                         create table reserveProduct(memberReserveId INTEGER  PRIMARY KEY AUTOINCREMENT, memberId INTEGER, day TEXT)";
+                  command.ExecuteNonQuery();
+                        monthCalendar1.SelectionStart.ToShortDateString();
+                         */
+                    }
+
+
+                }
+            }
         }
     }
 }

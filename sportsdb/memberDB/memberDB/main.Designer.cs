@@ -91,7 +91,7 @@ namespace memberDB
             this.memberStatusButton.TabIndex = 4;
             this.memberStatusButton.Text = "会員情報画面";
             this.memberStatusButton.UseVisualStyleBackColor = true;
-            this.memberStatusButton.Click += new System.EventHandler(this.button4_Click);
+            this.memberStatusButton.Click += new System.EventHandler(this.memberStatusButtonClick);
             // 
             // button5
             // 
@@ -126,7 +126,7 @@ namespace memberDB
             this.button7.UseVisualStyleBackColor = true;
             this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
-            // main
+            // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -139,10 +139,9 @@ namespace memberDB
             this.Controls.Add(this.memberDeleteButton);
             this.Controls.Add(this.reserveButton);
             this.Controls.Add(this.label1);
-            this.Name = "main";
+            this.Name = "Main";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "メイン画面";
-            this.Load += new System.EventHandler(this.main_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

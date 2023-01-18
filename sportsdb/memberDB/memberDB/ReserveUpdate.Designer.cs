@@ -34,7 +34,7 @@ namespace memberDB
             this.button1 = new System.Windows.Forms.Button();
             this.backButton = new System.Windows.Forms.Button();
             this.updateButton = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.memberIdBox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
@@ -81,7 +81,7 @@ namespace memberDB
             this.backButton.TabIndex = 3;
             this.backButton.Text = "戻るボタン";
             this.backButton.UseVisualStyleBackColor = true;
-            this.backButton.Click += new System.EventHandler(this.backButton_Click);
+            this.backButton.Click += new System.EventHandler(this.backButtonClick);
             // 
             // updateButton
             // 
@@ -91,14 +91,14 @@ namespace memberDB
             this.updateButton.TabIndex = 4;
             this.updateButton.Text = "更新";
             this.updateButton.UseVisualStyleBackColor = true;
-            this.updateButton.Click += new System.EventHandler(this.button2_Click);
+            this.updateButton.Click += new System.EventHandler(this.updateButtonClick);
             // 
-            // textBox1
+            // memberIdBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(536, 114);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(223, 27);
-            this.textBox1.TabIndex = 5;
+            this.memberIdBox.Location = new System.Drawing.Point(536, 114);
+            this.memberIdBox.Name = "memberIdBox";
+            this.memberIdBox.Size = new System.Drawing.Size(223, 27);
+            this.memberIdBox.TabIndex = 5;
             // 
             // label2
             // 
@@ -134,7 +134,7 @@ namespace memberDB
             this.Controls.Add(this.monthCalendar1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.memberIdBox);
             this.Controls.Add(this.updateButton);
             this.Controls.Add(this.backButton);
             this.Controls.Add(this.button1);
@@ -156,7 +156,7 @@ namespace memberDB
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button backButton;
         private System.Windows.Forms.Button updateButton;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox memberIdBox;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.MonthCalendar monthCalendar1;

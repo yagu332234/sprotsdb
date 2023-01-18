@@ -34,6 +34,7 @@ namespace memberDB
             this.reservebutton = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.reserveDliteButton = new System.Windows.Forms.Button();
+            this.reserveIdBox = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -56,12 +57,12 @@ namespace memberDB
             this.backButton.TabIndex = 1;
             this.backButton.Text = "戻る";
             this.backButton.UseVisualStyleBackColor = true;
-            this.backButton.Click += new System.EventHandler(this.button1_Click);
+            this.backButton.Click += new System.EventHandler(this.backButtonClick);
             // 
             // reservebutton
             // 
             this.reservebutton.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.reservebutton.Location = new System.Drawing.Point(147, 110);
+            this.reservebutton.Location = new System.Drawing.Point(145, 182);
             this.reservebutton.Name = "reservebutton";
             this.reservebutton.Size = new System.Drawing.Size(114, 39);
             this.reservebutton.TabIndex = 2;
@@ -72,7 +73,7 @@ namespace memberDB
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(287, 110);
+            this.dataGridView1.Location = new System.Drawing.Point(289, 182);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 29;
@@ -90,17 +91,25 @@ namespace memberDB
             this.reserveDliteButton.UseVisualStyleBackColor = true;
             this.reserveDliteButton.Click += new System.EventHandler(this.reserveDliteButton_Click);
             // 
-            // reserve_delitescreen
+            // reserveIdBox
+            // 
+            this.reserveIdBox.Location = new System.Drawing.Point(231, 115);
+            this.reserveIdBox.Name = "reserveIdBox";
+            this.reserveIdBox.Size = new System.Drawing.Size(268, 27);
+            this.reserveIdBox.TabIndex = 5;
+            // 
+            // ReserveDelete
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.reserveIdBox);
             this.Controls.Add(this.reserveDliteButton);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.reservebutton);
             this.Controls.Add(this.backButton);
             this.Controls.Add(this.label1);
-            this.Name = "reserve_delitescreen";
+            this.Name = "ReserveDelete";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "予約削除画面";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -116,5 +125,6 @@ namespace memberDB
         private System.Windows.Forms.Button reservebutton;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button reserveDliteButton;
+        private System.Windows.Forms.TextBox reserveIdBox;
     }
 }

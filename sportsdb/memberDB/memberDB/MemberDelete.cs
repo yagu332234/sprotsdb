@@ -10,25 +10,37 @@ namespace memberDB
         {
             InitializeComponent();
         }
-
+        /// <summary>
+        /// 戻るボタン
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void backButtonClick(object sender, EventArgs e)
         {
             SceneChange(sender, e);
         }
 
-
+        /// <summary>
+        /// メイン画面に行く処理
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void SceneChange(object sender, EventArgs e)
         {
-            //現在の画面を非表示
-            this.Visible = false;
-
-            //main画面を表示
-            Main main = new Main();
-            main.Show();
+            //Main画面を表示
+            Program.mainPage.MainForm = new Main();
+            Program.mainPage.MainForm.Show();
+            //現在の画面を消す
+            this.Close();
         }
+        /// <summary>
+        /// 会員削除ボタン
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void memberDeleteButtonClick(object sender, EventArgs e)
         {
-            
+            //確認表示
             DialogResult result = MessageBox.Show("本当に消してよろしいですか？", "警告", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
             if (result == DialogResult.Yes)
             {

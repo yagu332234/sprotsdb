@@ -29,23 +29,23 @@ namespace memberDB
         /// </summary>
         private void InitializeComponent()
         {
-            this.memberRegisterButton = new System.Windows.Forms.Button();
+            this.mainButton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.roginButton = new System.Windows.Forms.Button();
             this.exitButton = new System.Windows.Forms.Button();
             this.newRegisterButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // memberRegisterButton
+            // mainButton
             // 
-            this.memberRegisterButton.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.memberRegisterButton.Location = new System.Drawing.Point(151, 138);
-            this.memberRegisterButton.Name = "memberRegisterButton";
-            this.memberRegisterButton.Size = new System.Drawing.Size(136, 69);
-            this.memberRegisterButton.TabIndex = 0;
-            this.memberRegisterButton.Text = "会員登録";
-            this.memberRegisterButton.UseVisualStyleBackColor = true;
-            this.memberRegisterButton.Click += new System.EventHandler(this.memberRegisterButtonClick);
+            this.mainButton.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.mainButton.Location = new System.Drawing.Point(151, 138);
+            this.mainButton.Name = "mainButton";
+            this.mainButton.Size = new System.Drawing.Size(136, 69);
+            this.mainButton.TabIndex = 0;
+            this.mainButton.Text = "メイン画面";
+            this.mainButton.UseVisualStyleBackColor = true;
+            this.mainButton.Click += new System.EventHandler(this.mainButtonClick);
             // 
             // label1
             // 
@@ -98,7 +98,7 @@ namespace memberDB
             this.Controls.Add(this.exitButton);
             this.Controls.Add(this.roginButton);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.memberRegisterButton);
+            this.Controls.Add(this.mainButton);
             this.Name = "StartScreen";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "スタート画面";
@@ -108,7 +108,7 @@ namespace memberDB
 
         #endregion
 
-        private System.Windows.Forms.Button memberRegisterButton;
+        private System.Windows.Forms.Button mainButton;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button roginButton;
         private System.Windows.Forms.Button exitButton;

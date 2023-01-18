@@ -34,6 +34,7 @@ namespace memberDB
             this.reserveDeleteButton = new System.Windows.Forms.Button();
             this.reserveUpdateButton = new System.Windows.Forms.Button();
             this.backButton = new System.Windows.Forms.Button();
+            this.reserveStatusButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -48,10 +49,10 @@ namespace memberDB
             // 
             // reserveOptopnButton
             // 
-            this.reserveOptopnButton.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.reserveOptopnButton.Font = new System.Drawing.Font("Yu Gothic UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.reserveOptopnButton.Location = new System.Drawing.Point(218, 147);
             this.reserveOptopnButton.Name = "reserveOptopnButton";
-            this.reserveOptopnButton.Size = new System.Drawing.Size(124, 46);
+            this.reserveOptopnButton.Size = new System.Drawing.Size(140, 46);
             this.reserveOptopnButton.TabIndex = 1;
             this.reserveOptopnButton.Text = "予約登録";
             this.reserveOptopnButton.UseVisualStyleBackColor = true;
@@ -59,10 +60,10 @@ namespace memberDB
             // 
             // reserveDeleteButton
             // 
-            this.reserveDeleteButton.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.reserveDeleteButton.Font = new System.Drawing.Font("Yu Gothic UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.reserveDeleteButton.Location = new System.Drawing.Point(433, 147);
             this.reserveDeleteButton.Name = "reserveDeleteButton";
-            this.reserveDeleteButton.Size = new System.Drawing.Size(106, 46);
+            this.reserveDeleteButton.Size = new System.Drawing.Size(142, 46);
             this.reserveDeleteButton.TabIndex = 2;
             this.reserveDeleteButton.Text = "予約削除";
             this.reserveDeleteButton.UseVisualStyleBackColor = true;
@@ -70,10 +71,10 @@ namespace memberDB
             // 
             // reserveUpdateButton
             // 
-            this.reserveUpdateButton.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.reserveUpdateButton.Font = new System.Drawing.Font("Yu Gothic UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.reserveUpdateButton.Location = new System.Drawing.Point(218, 268);
             this.reserveUpdateButton.Name = "reserveUpdateButton";
-            this.reserveUpdateButton.Size = new System.Drawing.Size(124, 48);
+            this.reserveUpdateButton.Size = new System.Drawing.Size(140, 48);
             this.reserveUpdateButton.TabIndex = 3;
             this.reserveUpdateButton.Text = "予約更新";
             this.reserveUpdateButton.UseVisualStyleBackColor = true;
@@ -88,13 +89,25 @@ namespace memberDB
             this.backButton.TabIndex = 4;
             this.backButton.Text = "戻る";
             this.backButton.UseVisualStyleBackColor = true;
-            this.backButton.Click += new System.EventHandler(this.backButton6Click);
+            this.backButton.Click += new System.EventHandler(this.backButtonClick);
+            // 
+            // reserveStatusButton
+            // 
+            this.reserveStatusButton.Font = new System.Drawing.Font("Yu Gothic UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.reserveStatusButton.Location = new System.Drawing.Point(433, 268);
+            this.reserveStatusButton.Name = "reserveStatusButton";
+            this.reserveStatusButton.Size = new System.Drawing.Size(142, 48);
+            this.reserveStatusButton.TabIndex = 5;
+            this.reserveStatusButton.Text = "予約確認";
+            this.reserveStatusButton.UseVisualStyleBackColor = true;
+            this.reserveStatusButton.Click += new System.EventHandler(this.reserveStatusButtonClick);
             // 
             // ReserveOption
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.reserveStatusButton);
             this.Controls.Add(this.backButton);
             this.Controls.Add(this.reserveUpdateButton);
             this.Controls.Add(this.reserveDeleteButton);
@@ -115,5 +128,6 @@ namespace memberDB
         private System.Windows.Forms.Button reserveDeleteButton;
         private System.Windows.Forms.Button reserveUpdateButton;
         private System.Windows.Forms.Button backButton;
+        private System.Windows.Forms.Button reserveStatusButton;
     }
 }

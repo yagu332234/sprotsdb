@@ -1,7 +1,7 @@
 ﻿
 namespace memberDB
 {
-    partial class 会員情報表示
+    partial class MemberStatus
     {
         /// <summary>
         /// Required designer variable.
@@ -67,7 +67,7 @@ namespace memberDB
             this.memberStatusButton.UseVisualStyleBackColor = true;
             this.memberStatusButton.Click += new System.EventHandler(this.memberStatusButtonClick);
             // 
-            // 会員情報表示
+            // MemberStatus
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -75,7 +75,7 @@ namespace memberDB
             this.Controls.Add(this.memberStatusButton);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.backButton);
-            this.Name = "会員情報表示";
+            this.Name = "MemberStatus";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "会員情報表示";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
