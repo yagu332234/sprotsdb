@@ -15,23 +15,7 @@ namespace memberDB
         {
             InitializeComponent();
         }
-        /// <summary>
-        /// データベース表示
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void button1_Click(object sender, EventArgs e)
-        {
-            using (SQLiteConnection conection = new SQLiteConnection("Data Source=reserve.db"))
-            {
-                //reservedbの生成
-                var dataTable = new DataTable();
-                //SQLの実行
-                var adapter = new SQLiteDataAdapter("SELECT * FROM reserveProduct", conection);
-                adapter.Fill(dataTable);
-                dataGridView1.DataSource = dataTable;
-            }
-        }
+        
         /// <summary>
         /// 戻るボタン
         /// </summary>
@@ -64,7 +48,7 @@ namespace memberDB
                     {
                         SQLiteCommand cmd = con.CreateCommand();
                         //インサート
-                        cmd.CommandText = "UPDATE reserveProduct set day = @Day memberId=@MemberId WHERE memberReserveId = @MemberReserveId";
+                        cmd.CommandText = "UPDATE reserveProduct set day = @Day WHERE memberReserveId = @MemberReserveId";
                         //パラメータセット
                         cmd.Parameters.Add("MemberReserveId", System.Data.DbType.Int64);
                         cmd.Parameters.Add("Day", System.Data.DbType.String);
@@ -75,6 +59,9 @@ namespace memberDB
                         cmd.ExecuteNonQuery();
                         //
                         trans.Commit();
+
+                        //登録完了表示
+                        DialogResult t_Result = MessageBox.Show("更新完了しました!", "登録完了", MessageBoxButtons.OK);
                         /*
                          create table reserveProduct(memberReserveId INTEGER  PRIMARY KEY AUTOINCREMENT, memberId INTEGER, day TEXT)";
                   command.ExecuteNonQuery();

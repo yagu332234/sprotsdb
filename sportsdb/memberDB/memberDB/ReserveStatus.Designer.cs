@@ -42,7 +42,7 @@ namespace memberDB
             this.reserveStatusButton.Font = new System.Drawing.Font("Yu Gothic UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.reserveStatusButton.Location = new System.Drawing.Point(125, 160);
             this.reserveStatusButton.Name = "reserveStatusButton";
-            this.reserveStatusButton.Size = new System.Drawing.Size(153, 43);
+            this.reserveStatusButton.Size = new System.Drawing.Size(153, 47);
             this.reserveStatusButton.TabIndex = 0;
             this.reserveStatusButton.Text = "予約表示";
             this.reserveStatusButton.UseVisualStyleBackColor = true;
@@ -77,7 +77,7 @@ namespace memberDB
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(287, 37);
             this.label1.TabIndex = 3;
-            this.label1.Text = "会員IDを入力してください";
+            this.label1.Text = "予約IDを入力してください";
             // 
             // reserveIdBox
             // 
@@ -97,6 +97,7 @@ namespace memberDB
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.reserveStatusButton);
             this.Name = "ReserveStatus";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ReserveStatus";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

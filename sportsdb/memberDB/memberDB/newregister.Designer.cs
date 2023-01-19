@@ -46,7 +46,7 @@ namespace memberDB
             // 
             // nameBox
             // 
-            this.nameBox.Location = new System.Drawing.Point(188, 84);
+            this.nameBox.Location = new System.Drawing.Point(287, 90);
             this.nameBox.MaxLength = 15;
             this.nameBox.Name = "nameBox";
             this.nameBox.Size = new System.Drawing.Size(196, 27);
@@ -54,7 +54,7 @@ namespace memberDB
             // 
             // housebox
             // 
-            this.housebox.Location = new System.Drawing.Point(188, 147);
+            this.housebox.Location = new System.Drawing.Point(287, 153);
             this.housebox.MaxLength = 100;
             this.housebox.Name = "housebox";
             this.housebox.Size = new System.Drawing.Size(196, 27);
@@ -63,10 +63,10 @@ namespace memberDB
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Yu Gothic UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(231, 31);
+            this.label1.Font = new System.Drawing.Font("Yu Gothic UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(338, 27);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(115, 35);
+            this.label1.Size = new System.Drawing.Size(125, 37);
             this.label1.TabIndex = 3;
             this.label1.Text = "新規登録";
             // 
@@ -74,7 +74,7 @@ namespace memberDB
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(125, 83);
+            this.label2.Location = new System.Drawing.Point(224, 89);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(52, 28);
             this.label2.TabIndex = 4;
@@ -84,7 +84,7 @@ namespace memberDB
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(130, 143);
+            this.label3.Location = new System.Drawing.Point(229, 149);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(52, 28);
             this.label3.TabIndex = 5;
@@ -94,7 +94,7 @@ namespace memberDB
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(90, 209);
+            this.label4.Location = new System.Drawing.Point(189, 215);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(92, 28);
             this.label4.TabIndex = 6;
@@ -104,7 +104,7 @@ namespace memberDB
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(90, 269);
+            this.label5.Location = new System.Drawing.Point(189, 275);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(92, 28);
             this.label5.TabIndex = 8;
@@ -112,7 +112,7 @@ namespace memberDB
             // 
             // passwordbox
             // 
-            this.passwordbox.Location = new System.Drawing.Point(188, 324);
+            this.passwordbox.Location = new System.Drawing.Point(287, 330);
             this.passwordbox.MaxLength = 100;
             this.passwordbox.Name = "passwordbox";
             this.passwordbox.Size = new System.Drawing.Size(196, 27);
@@ -122,7 +122,7 @@ namespace memberDB
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label6.Location = new System.Drawing.Point(92, 323);
+            this.label6.Location = new System.Drawing.Point(191, 329);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(85, 28);
             this.label6.TabIndex = 10;
@@ -141,7 +141,7 @@ namespace memberDB
             // 
             // phonebox
             // 
-            this.phonebox.Location = new System.Drawing.Point(188, 210);
+            this.phonebox.Location = new System.Drawing.Point(287, 216);
             this.phonebox.Mask = "99900-9990-0000";
             this.phonebox.Name = "phonebox";
             this.phonebox.Size = new System.Drawing.Size(196, 27);
@@ -149,7 +149,7 @@ namespace memberDB
             // 
             // birthdaybox
             // 
-            this.birthdaybox.Location = new System.Drawing.Point(188, 269);
+            this.birthdaybox.Location = new System.Drawing.Point(287, 275);
             this.birthdaybox.Mask = "0000年90月90日";
             this.birthdaybox.Name = "birthdaybox";
             this.birthdaybox.Size = new System.Drawing.Size(196, 27);

@@ -75,6 +75,8 @@ namespace memberDB
                         //コミット
                         trans.Commit();
 
+                        //登録完了表示
+                        DialogResult t_Result = MessageBox.Show("予約完了しました!", "予約完了", MessageBoxButtons.OK);
                         /*
                           command.CommandText =
                         "create table reserveProduct(memberReserveId INTEGER  PRIMARY KEY AUTOINCREMENT, memberId INTEGER, day TEXT)";

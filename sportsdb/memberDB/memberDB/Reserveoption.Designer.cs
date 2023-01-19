@@ -40,10 +40,10 @@ namespace memberDB
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Yu Gothic UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Font = new System.Drawing.Font("Yu Gothic UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.Location = new System.Drawing.Point(329, 57);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(115, 35);
+            this.label1.Size = new System.Drawing.Size(125, 37);
             this.label1.TabIndex = 0;
             this.label1.Text = "予約選択";
             // 
@@ -52,7 +52,7 @@ namespace memberDB
             this.reserveOptopnButton.Font = new System.Drawing.Font("Yu Gothic UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.reserveOptopnButton.Location = new System.Drawing.Point(218, 147);
             this.reserveOptopnButton.Name = "reserveOptopnButton";
-            this.reserveOptopnButton.Size = new System.Drawing.Size(140, 46);
+            this.reserveOptopnButton.Size = new System.Drawing.Size(140, 60);
             this.reserveOptopnButton.TabIndex = 1;
             this.reserveOptopnButton.Text = "予約登録";
             this.reserveOptopnButton.UseVisualStyleBackColor = true;
@@ -63,7 +63,7 @@ namespace memberDB
             this.reserveDeleteButton.Font = new System.Drawing.Font("Yu Gothic UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.reserveDeleteButton.Location = new System.Drawing.Point(433, 147);
             this.reserveDeleteButton.Name = "reserveDeleteButton";
-            this.reserveDeleteButton.Size = new System.Drawing.Size(142, 46);
+            this.reserveDeleteButton.Size = new System.Drawing.Size(142, 60);
             this.reserveDeleteButton.TabIndex = 2;
             this.reserveDeleteButton.Text = "予約削除";
             this.reserveDeleteButton.UseVisualStyleBackColor = true;
@@ -74,7 +74,7 @@ namespace memberDB
             this.reserveUpdateButton.Font = new System.Drawing.Font("Yu Gothic UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.reserveUpdateButton.Location = new System.Drawing.Point(218, 268);
             this.reserveUpdateButton.Name = "reserveUpdateButton";
-            this.reserveUpdateButton.Size = new System.Drawing.Size(140, 48);
+            this.reserveUpdateButton.Size = new System.Drawing.Size(140, 57);
             this.reserveUpdateButton.TabIndex = 3;
             this.reserveUpdateButton.Text = "予約更新";
             this.reserveUpdateButton.UseVisualStyleBackColor = true;
@@ -82,7 +82,7 @@ namespace memberDB
             // 
             // backButton
             // 
-            this.backButton.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.backButton.Font = new System.Drawing.Font("Yu Gothic UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.backButton.Location = new System.Drawing.Point(72, 380);
             this.backButton.Name = "backButton";
             this.backButton.Size = new System.Drawing.Size(106, 48);
@@ -96,7 +96,7 @@ namespace memberDB
             this.reserveStatusButton.Font = new System.Drawing.Font("Yu Gothic UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.reserveStatusButton.Location = new System.Drawing.Point(433, 268);
             this.reserveStatusButton.Name = "reserveStatusButton";
-            this.reserveStatusButton.Size = new System.Drawing.Size(142, 48);
+            this.reserveStatusButton.Size = new System.Drawing.Size(142, 57);
             this.reserveStatusButton.TabIndex = 5;
             this.reserveStatusButton.Text = "予約確認";
             this.reserveStatusButton.UseVisualStyleBackColor = true;

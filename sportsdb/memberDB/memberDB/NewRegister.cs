@@ -127,7 +127,9 @@ namespace memberDB
                             //コミット
                             trans.Commit();
 
+                            
                         }
+                        //会員IDも表示したい
                         //登録完了表示
                         DialogResult t_Result = MessageBox.Show("登録完了しました!", "登録完了", MessageBoxButtons.OK);
                         //start画面遷移

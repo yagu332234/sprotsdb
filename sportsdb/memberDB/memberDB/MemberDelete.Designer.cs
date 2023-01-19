@@ -37,7 +37,7 @@ namespace memberDB
             // 
             // memberDeleteBox
             // 
-            this.memberDeleteBox.Location = new System.Drawing.Point(306, 114);
+            this.memberDeleteBox.Location = new System.Drawing.Point(319, 138);
             this.memberDeleteBox.Name = "memberDeleteBox";
             this.memberDeleteBox.Size = new System.Drawing.Size(125, 27);
             this.memberDeleteBox.TabIndex = 0;
