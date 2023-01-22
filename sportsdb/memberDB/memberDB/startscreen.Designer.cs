@@ -38,10 +38,10 @@ namespace memberDB
             // 
             // mainButton
             // 
-            this.mainButton.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.mainButton.Font = new System.Drawing.Font("Yu Gothic UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.mainButton.Location = new System.Drawing.Point(151, 138);
             this.mainButton.Name = "mainButton";
-            this.mainButton.Size = new System.Drawing.Size(136, 69);
+            this.mainButton.Size = new System.Drawing.Size(167, 69);
             this.mainButton.TabIndex = 0;
             this.mainButton.Text = "メイン画面";
             this.mainButton.UseVisualStyleBackColor = true;
@@ -49,19 +49,19 @@ namespace memberDB
             // 
             // label1
             // 
-            this.label1.Font = new System.Drawing.Font("Yu Gothic UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(252, 52);
+            this.label1.Font = new System.Drawing.Font("Yu Gothic UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(261, 45);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(140, 52);
+            this.label1.Size = new System.Drawing.Size(190, 53);
             this.label1.TabIndex = 1;
             this.label1.Text = "スタート画面";
             // 
             // roginButton
             // 
-            this.roginButton.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.roginButton.Location = new System.Drawing.Point(310, 138);
+            this.roginButton.Font = new System.Drawing.Font("Yu Gothic UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.roginButton.Location = new System.Drawing.Point(344, 138);
             this.roginButton.Name = "roginButton";
-            this.roginButton.Size = new System.Drawing.Size(159, 69);
+            this.roginButton.Size = new System.Drawing.Size(167, 69);
             this.roginButton.TabIndex = 2;
             this.roginButton.Text = "ログイン画面";
             this.roginButton.UseVisualStyleBackColor = true;
@@ -69,10 +69,10 @@ namespace memberDB
             // 
             // exitButton
             // 
-            this.exitButton.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.exitButton.Location = new System.Drawing.Point(103, 327);
+            this.exitButton.Font = new System.Drawing.Font("Yu Gothic UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.exitButton.Location = new System.Drawing.Point(151, 254);
             this.exitButton.Name = "exitButton";
-            this.exitButton.Size = new System.Drawing.Size(137, 41);
+            this.exitButton.Size = new System.Drawing.Size(167, 69);
             this.exitButton.TabIndex = 3;
             this.exitButton.Text = "システム終了";
             this.exitButton.UseVisualStyleBackColor = true;
@@ -80,10 +80,10 @@ namespace memberDB
             // 
             // newRegisterButton
             // 
-            this.newRegisterButton.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.newRegisterButton.Location = new System.Drawing.Point(240, 239);
+            this.newRegisterButton.Font = new System.Drawing.Font("Yu Gothic UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.newRegisterButton.Location = new System.Drawing.Point(344, 254);
             this.newRegisterButton.Name = "newRegisterButton";
-            this.newRegisterButton.Size = new System.Drawing.Size(136, 69);
+            this.newRegisterButton.Size = new System.Drawing.Size(167, 69);
             this.newRegisterButton.TabIndex = 4;
             this.newRegisterButton.Text = "新規登録";
             this.newRegisterButton.UseVisualStyleBackColor = true;

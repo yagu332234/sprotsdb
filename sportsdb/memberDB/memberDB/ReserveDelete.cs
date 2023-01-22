@@ -24,6 +24,15 @@ namespace memberDB
             //現在の画面を消す
             this.Close();
         }
+        private void SceneChange(object sender, EventArgs e)
+        {
+
+            //start画面を表示
+            Program.mainPage.MainForm = new StartScreen();
+            Program.mainPage.MainForm.Show();
+            //現在の画面を消す
+            this.Close();
+        }
         /// <summary>
         /// 予約表示
         /// </summary>
@@ -58,9 +67,40 @@ namespace memberDB
             }
         }
 
-        private void reserveDliteButton_Click(object sender, EventArgs e)
+        private void reserveDliteButtonClick(object sender, EventArgs e)
         {
-
+            //確認表示
+            DialogResult result = MessageBox.Show("本当に削除してよろしいですか？", "警告", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (result == DialogResult.Yes)
+            {
+                using (SQLiteConnection con = new SQLiteConnection("Data Source=reserve.db"))
+                {
+                    con.Open();
+                    using (SQLiteTransaction trans = con.BeginTransaction())
+                    {
+                        SQLiteCommand cmd = con.CreateCommand();
+                        //条件
+                        cmd.CommandText = "DELETE FROM reserveProduct WHERE reserveId = @reserveid";
+                        //パラメータセット
+                        cmd.Parameters.Add("reserveid", System.Data.DbType.Int64);
+                        //削除
+                        cmd.Parameters["reserveid"].Value = int.Parse(reserveIdBox.Text);
+                        cmd.ExecuteNonQuery();
+                        //コミット
+                        trans.Commit();
+                    }
+                }
+                DialogResult t_Result = MessageBox.Show("予約削除しました", "予約削除完了", MessageBoxButtons.OK);
+                //start画面遷移
+                if (t_Result == DialogResult.OK)
+                {
+                    //ReserveOption画面を表示
+                    Program.mainPage.MainForm = new ReserveOption();
+                    Program.mainPage.MainForm.Show();
+                    //現在の画面を消す
+                    this.Close();
+                }
+            }
         }
     }
 }

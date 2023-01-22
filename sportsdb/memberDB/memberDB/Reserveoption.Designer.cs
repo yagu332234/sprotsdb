@@ -115,7 +115,7 @@ namespace memberDB
             this.Controls.Add(this.label1);
             this.Name = "ReserveOption";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "予約選択画面";
+            this.Text = "予約選択";
             this.ResumeLayout(false);
             this.PerformLayout();
 

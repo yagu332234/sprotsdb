@@ -42,10 +42,10 @@ namespace memberDB
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Yu Gothic UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(277, 44);
+            this.label1.Font = new System.Drawing.Font("Yu Gothic UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(303, 43);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(139, 35);
+            this.label1.Size = new System.Drawing.Size(148, 37);
             this.label1.TabIndex = 0;
             this.label1.Text = "メインメニュー";
             // 
@@ -54,7 +54,7 @@ namespace memberDB
             this.reserveButton.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.reserveButton.Location = new System.Drawing.Point(176, 130);
             this.reserveButton.Name = "reserveButton";
-            this.reserveButton.Size = new System.Drawing.Size(139, 47);
+            this.reserveButton.Size = new System.Drawing.Size(180, 75);
             this.reserveButton.TabIndex = 1;
             this.reserveButton.Text = "予約画面";
             this.reserveButton.UseVisualStyleBackColor = true;
@@ -63,9 +63,9 @@ namespace memberDB
             // memberDeleteButton
             // 
             this.memberDeleteButton.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.memberDeleteButton.Location = new System.Drawing.Point(380, 130);
+            this.memberDeleteButton.Location = new System.Drawing.Point(389, 130);
             this.memberDeleteButton.Name = "memberDeleteButton";
-            this.memberDeleteButton.Size = new System.Drawing.Size(142, 47);
+            this.memberDeleteButton.Size = new System.Drawing.Size(180, 75);
             this.memberDeleteButton.TabIndex = 2;
             this.memberDeleteButton.Text = "会員削除";
             this.memberDeleteButton.UseVisualStyleBackColor = true;
@@ -74,9 +74,9 @@ namespace memberDB
             // memberUpdateButton
             // 
             this.memberUpdateButton.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.memberUpdateButton.Location = new System.Drawing.Point(176, 262);
+            this.memberUpdateButton.Location = new System.Drawing.Point(176, 246);
             this.memberUpdateButton.Name = "memberUpdateButton";
-            this.memberUpdateButton.Size = new System.Drawing.Size(151, 52);
+            this.memberUpdateButton.Size = new System.Drawing.Size(180, 76);
             this.memberUpdateButton.TabIndex = 3;
             this.memberUpdateButton.Text = "会員情報更新画面";
             this.memberUpdateButton.UseVisualStyleBackColor = true;
@@ -85,9 +85,9 @@ namespace memberDB
             // memberStatusButton
             // 
             this.memberStatusButton.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.memberStatusButton.Location = new System.Drawing.Point(380, 262);
+            this.memberStatusButton.Location = new System.Drawing.Point(389, 247);
             this.memberStatusButton.Name = "memberStatusButton";
-            this.memberStatusButton.Size = new System.Drawing.Size(142, 52);
+            this.memberStatusButton.Size = new System.Drawing.Size(180, 75);
             this.memberStatusButton.TabIndex = 4;
             this.memberStatusButton.Text = "会員情報画面";
             this.memberStatusButton.UseVisualStyleBackColor = true;
@@ -98,7 +98,7 @@ namespace memberDB
             this.button5.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button5.Location = new System.Drawing.Point(176, 337);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(165, 75);
+            this.button5.Size = new System.Drawing.Size(180, 75);
             this.button5.TabIndex = 5;
             this.button5.Text = "会員データ作成";
             this.button5.UseVisualStyleBackColor = true;
@@ -109,18 +109,18 @@ namespace memberDB
             this.backButton.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.backButton.Location = new System.Drawing.Point(31, 360);
             this.backButton.Name = "backButton";
-            this.backButton.Size = new System.Drawing.Size(129, 52);
+            this.backButton.Size = new System.Drawing.Size(119, 52);
             this.backButton.TabIndex = 6;
-            this.backButton.Text = "戻るボタン";
+            this.backButton.Text = "戻る";
             this.backButton.UseVisualStyleBackColor = true;
             this.backButton.Click += new System.EventHandler(this.backButtonClick);
             // 
             // button7
             // 
             this.button7.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button7.Location = new System.Drawing.Point(380, 337);
+            this.button7.Location = new System.Drawing.Point(389, 337);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(165, 75);
+            this.button7.Size = new System.Drawing.Size(180, 75);
             this.button7.TabIndex = 7;
             this.button7.Text = "予約データ作成";
             this.button7.UseVisualStyleBackColor = true;
@@ -141,7 +141,7 @@ namespace memberDB
             this.Controls.Add(this.label1);
             this.Name = "Main";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "メイン画面";
+            this.Text = "メインメニュー";
             this.ResumeLayout(false);
             this.PerformLayout();
 

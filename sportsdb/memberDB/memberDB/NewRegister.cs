@@ -28,13 +28,12 @@ namespace memberDB
         /// <param name="e"></param>
         private void SceneChange(object sender, EventArgs e)
         {
-            //次画面を非表示
-            this.Visible = false;
-
-            //startscreenを表示
-            StartScreen startScreen = new StartScreen();
+            
             //start画面を表示
-            startScreen.Show();
+            Program.mainPage.MainForm = new StartScreen();
+            Program.mainPage.MainForm.Show();
+            //現在の画面を消す
+            this.Close();
         }
         /// <summary>
         /// 次へボタン

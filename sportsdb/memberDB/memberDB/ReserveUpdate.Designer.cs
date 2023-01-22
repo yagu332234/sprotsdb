@@ -44,9 +44,9 @@ namespace memberDB
             this.label1.Font = new System.Drawing.Font("Yu Gothic UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.Location = new System.Drawing.Point(189, 50);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(434, 37);
+            this.label1.Size = new System.Drawing.Size(457, 37);
             this.label1.TabIndex = 0;
-            this.label1.Text = "更新する予約の日付を選択してください";
+            this.label1.Text = "更新する予約IDと日付を選択してください";
             // 
             // backButton
             // 
@@ -55,7 +55,7 @@ namespace memberDB
             this.backButton.Name = "backButton";
             this.backButton.Size = new System.Drawing.Size(146, 59);
             this.backButton.TabIndex = 3;
-            this.backButton.Text = "戻るボタン";
+            this.backButton.Text = "戻る";
             this.backButton.UseVisualStyleBackColor = true;
             this.backButton.Click += new System.EventHandler(this.backButtonClick);
             // 
@@ -117,7 +117,7 @@ namespace memberDB
             this.Controls.Add(this.label1);
             this.Name = "ReserveUpdate";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "reserve_Update";
+            this.Text = "予約更新";
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -1,9 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Text;
 using System.Windows.Forms;
 using System.Data.SQLite;
 
@@ -37,7 +32,7 @@ namespace memberDB
         private void updateButtonClick(object sender, EventArgs e)
         {
 
-            DialogResult result = MessageBox.Show("本当にこの内容でよろしいですか？", "警告", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            DialogResult result = MessageBox.Show("本当にこの内容更新してよろしいですか？", "警告", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
             if (result == DialogResult.Yes)
             {
                 using (SQLiteConnection con = new SQLiteConnection("Data Source=reserve.db"))
@@ -61,12 +56,8 @@ namespace memberDB
                         trans.Commit();
 
                         //登録完了表示
-                        DialogResult t_Result = MessageBox.Show("更新完了しました!", "登録完了", MessageBoxButtons.OK);
-                        /*
-                         create table reserveProduct(memberReserveId INTEGER  PRIMARY KEY AUTOINCREMENT, memberId INTEGER, day TEXT)";
-                  command.ExecuteNonQuery();
-                        monthCalendar1.SelectionStart.ToShortDateString();
-                         */
+                        DialogResult t_Result = MessageBox.Show("予約更新が完了しました!", "予約更新完了", MessageBoxButtons.OK);
+                       
                     }
 
 

@@ -52,19 +52,19 @@ namespace memberDB
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Yu Gothic UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(240, 26);
+            this.label1.Font = new System.Drawing.Font("Yu Gothic UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(212, 28);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(389, 35);
+            this.label1.Size = new System.Drawing.Size(420, 37);
             this.label1.TabIndex = 0;
             this.label1.Text = "更新したいIDを選んで更新してください";
             // 
             // backButton
             // 
-            this.backButton.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.backButton.Font = new System.Drawing.Font("Yu Gothic UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.backButton.Location = new System.Drawing.Point(24, 386);
             this.backButton.Name = "backButton";
-            this.backButton.Size = new System.Drawing.Size(94, 41);
+            this.backButton.Size = new System.Drawing.Size(94, 52);
             this.backButton.TabIndex = 1;
             this.backButton.Text = "戻る";
             this.backButton.UseVisualStyleBackColor = true;
@@ -74,7 +74,7 @@ namespace memberDB
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(172, 98);
+            this.label2.Location = new System.Drawing.Point(171, 101);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(71, 28);
             this.label2.TabIndex = 2;
@@ -84,7 +84,7 @@ namespace memberDB
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(190, 163);
+            this.label3.Location = new System.Drawing.Point(180, 163);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(52, 28);
             this.label3.TabIndex = 3;
@@ -94,7 +94,7 @@ namespace memberDB
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(190, 222);
+            this.label4.Location = new System.Drawing.Point(180, 221);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(52, 28);
             this.label4.TabIndex = 4;
@@ -104,21 +104,21 @@ namespace memberDB
             // 
             this.memberIdBox.Location = new System.Drawing.Point(250, 102);
             this.memberIdBox.Name = "memberIdBox";
-            this.memberIdBox.Size = new System.Drawing.Size(125, 27);
+            this.memberIdBox.Size = new System.Drawing.Size(138, 27);
             this.memberIdBox.TabIndex = 5;
             // 
             // memberNameBox
             // 
             this.memberNameBox.Location = new System.Drawing.Point(250, 167);
             this.memberNameBox.Name = "memberNameBox";
-            this.memberNameBox.Size = new System.Drawing.Size(125, 27);
+            this.memberNameBox.Size = new System.Drawing.Size(138, 27);
             this.memberNameBox.TabIndex = 6;
             // 
             // memberHouseBox
             // 
             this.memberHouseBox.Location = new System.Drawing.Point(250, 222);
             this.memberHouseBox.Name = "memberHouseBox";
-            this.memberHouseBox.Size = new System.Drawing.Size(125, 27);
+            this.memberHouseBox.Size = new System.Drawing.Size(138, 27);
             this.memberHouseBox.TabIndex = 7;
             // 
             // dataGridView1
@@ -133,10 +133,10 @@ namespace memberDB
             // 
             // idButton
             // 
-            this.idButton.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.idButton.Font = new System.Drawing.Font("Yu Gothic UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.idButton.Location = new System.Drawing.Point(394, 103);
             this.idButton.Name = "idButton";
-            this.idButton.Size = new System.Drawing.Size(94, 38);
+            this.idButton.Size = new System.Drawing.Size(94, 46);
             this.idButton.TabIndex = 9;
             this.idButton.Text = "検索";
             this.idButton.UseVisualStyleBackColor = true;
@@ -146,7 +146,7 @@ namespace memberDB
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(150, 269);
+            this.label5.Location = new System.Drawing.Point(140, 266);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(92, 28);
             this.label5.TabIndex = 10;
@@ -157,14 +157,14 @@ namespace memberDB
             this.memberPhoneBox.Location = new System.Drawing.Point(249, 270);
             this.memberPhoneBox.Mask = "99900-9990-0000";
             this.memberPhoneBox.Name = "memberPhoneBox";
-            this.memberPhoneBox.Size = new System.Drawing.Size(125, 27);
+            this.memberPhoneBox.Size = new System.Drawing.Size(139, 27);
             this.memberPhoneBox.TabIndex = 11;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label6.Location = new System.Drawing.Point(151, 314);
+            this.label6.Location = new System.Drawing.Point(140, 318);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(92, 28);
             this.label6.TabIndex = 12;
@@ -175,7 +175,7 @@ namespace memberDB
             this.memberBirthBox.Location = new System.Drawing.Point(250, 318);
             this.memberBirthBox.Mask = "0000年90月90日";
             this.memberBirthBox.Name = "memberBirthBox";
-            this.memberBirthBox.Size = new System.Drawing.Size(125, 27);
+            this.memberBirthBox.Size = new System.Drawing.Size(138, 27);
             this.memberBirthBox.TabIndex = 13;
             this.memberBirthBox.ValidatingType = typeof(System.DateTime);
             // 
@@ -183,7 +183,7 @@ namespace memberDB
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label7.Location = new System.Drawing.Point(157, 364);
+            this.label7.Location = new System.Drawing.Point(147, 363);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(85, 28);
             this.label7.TabIndex = 14;
@@ -193,15 +193,15 @@ namespace memberDB
             // 
             this.memberPassBox.Location = new System.Drawing.Point(250, 364);
             this.memberPassBox.Name = "memberPassBox";
-            this.memberPassBox.Size = new System.Drawing.Size(125, 27);
+            this.memberPassBox.Size = new System.Drawing.Size(138, 27);
             this.memberPassBox.TabIndex = 15;
             // 
             // updateButton
             // 
-            this.updateButton.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.updateButton.Font = new System.Drawing.Font("Yu Gothic UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.updateButton.Location = new System.Drawing.Point(551, 386);
             this.updateButton.Name = "updateButton";
-            this.updateButton.Size = new System.Drawing.Size(94, 41);
+            this.updateButton.Size = new System.Drawing.Size(94, 52);
             this.updateButton.TabIndex = 16;
             this.updateButton.Text = "更新";
             this.updateButton.UseVisualStyleBackColor = true;
@@ -231,7 +231,7 @@ namespace memberDB
             this.Controls.Add(this.label1);
             this.Name = "MemberUpdate";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "会員更新画面";
+            this.Text = "会員更新";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

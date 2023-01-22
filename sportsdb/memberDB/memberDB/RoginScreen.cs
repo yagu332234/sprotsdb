@@ -2,6 +2,7 @@
 using System.Data;
 using System.Windows.Forms;
 using System.Data.SQLite;
+using System.Diagnostics;
 
 namespace memberDB
 {
@@ -13,8 +14,10 @@ namespace memberDB
         {
             InitializeComponent();
         }
-
-
+        /// <summary>
+        /// パスワードを隠す判定をする変数
+        /// </summary>
+        private bool passwordcheck = false;
         /// <summary>
         /// 戻るボタン
         /// </summary>
@@ -35,7 +38,8 @@ namespace memberDB
         /// <param name="e"></param>
         private void roginButtonClick(object sender, EventArgs e)
         {
-           
+            Debug.Print("a");
+            Console.WriteLine("a");
                 //入力されたIDを取得
                 string id = memberIdBox.Text;
             //入力されたpasswordを取得
@@ -50,43 +54,58 @@ namespace memberDB
                         SQLiteCommand cmd = con.CreateCommand();
                         //条件
 
-                        cmd.CommandText = "SELECT * FROM t_product WHERE memberId = @Memberid,memberPassword=@MemberPassword";
-
-                    
-                    /*
-                       //確認表示
-            DialogResult result = MessageBox.Show("本当に消してよろしいですか？", "警告", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
-            if (result == DialogResult.Yes)
-            {
-                using (SQLiteConnection con = new SQLiteConnection("Data Source=register.db"))
-                {
-                    con.Open();
-                    using (SQLiteTransaction trans = con.BeginTransaction())
+                     //   cmd.CommandText = ($"SELECT memberId, memberPassword FROM t_product", con);
+                        
+                    Debug.Print(cmd.CommandText);
+                    if (memberIdBox.Text == cmd.CommandText)
                     {
-                        SQLiteCommand cmd = con.CreateCommand();
-                        //条件
-                        cmd.CommandText = "DELETE FROM t_product WHERE memberId = @Mid";
-                        //パラメータセット
-                        cmd.Parameters.Add("Mid", System.Data.DbType.Int64);
-                        //削除
-                        cmd.Parameters["Mid"].Value = int.Parse(memberDeleteBox.Text);
-                        cmd.ExecuteNonQuery();
-                        //コミット
-                        trans.Commit();
+                        Debug.Print("成功");
+                    }
+                    else
+                    {
+                        Debug.Print("失敗");
+                    }
+
+                    using (SQLiteConnection conection = new SQLiteConnection("Data Source=register.db"))
+                    {
+                        //registerdbの生成
+                        var dataTable = new DataTable();
+                        //SQLの実行
+                        var adapter = new SQLiteDataAdapter("SELECT * FROM t_product", conection);
+                        adapter.Fill(dataTable);
+                        Debug.Print("");
+                    }
+                        /*
+               
+                    DialogResult t_Result = MessageBox.Show("登録削除しました", "登録完了", MessageBoxButtons.OK);
+                    //start画面遷移
+                    if (t_Result == DialogResult.OK)
+                    {
+                        SceneChange(sender, e);
                     }
                 }
-                DialogResult t_Result = MessageBox.Show("登録削除しました", "登録完了", MessageBoxButtons.OK);
-                //start画面遷移
-                if (t_Result == DialogResult.OK)
-                {
-                    SceneChange(sender, e);
-                }
-            }
-                    */
-                }
+                        */
+                    }
             }
         }
-
+        /// <summary>
+        /// パスワードを隠すボタン
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void maskButtonClick(object sender, EventArgs e)
+        {
+            if (passwordcheck == false)
+            {
+                passwordcheck = true;
+                memberPasswordBox.PasswordChar = '*';
+            }
+            else
+            {
+                passwordcheck = false;
+                memberPasswordBox.PasswordChar = '\0';
+            }
+        }
     }
 }
     

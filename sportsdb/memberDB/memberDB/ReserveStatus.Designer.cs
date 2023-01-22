@@ -40,11 +40,11 @@ namespace memberDB
             // reserveStatusButton
             // 
             this.reserveStatusButton.Font = new System.Drawing.Font("Yu Gothic UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.reserveStatusButton.Location = new System.Drawing.Point(125, 160);
+            this.reserveStatusButton.Location = new System.Drawing.Point(128, 160);
             this.reserveStatusButton.Name = "reserveStatusButton";
-            this.reserveStatusButton.Size = new System.Drawing.Size(153, 47);
+            this.reserveStatusButton.Size = new System.Drawing.Size(124, 47);
             this.reserveStatusButton.TabIndex = 0;
-            this.reserveStatusButton.Text = "予約表示";
+            this.reserveStatusButton.Text = "表示";
             this.reserveStatusButton.UseVisualStyleBackColor = true;
             this.reserveStatusButton.Click += new System.EventHandler(this.reserveStatusButtonClick);
             // 
@@ -61,7 +61,7 @@ namespace memberDB
             // backButton
             // 
             this.backButton.Font = new System.Drawing.Font("Yu Gothic UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.backButton.Location = new System.Drawing.Point(79, 359);
+            this.backButton.Location = new System.Drawing.Point(99, 356);
             this.backButton.Name = "backButton";
             this.backButton.Size = new System.Drawing.Size(114, 60);
             this.backButton.TabIndex = 2;
@@ -73,15 +73,15 @@ namespace memberDB
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Yu Gothic UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(306, 37);
+            this.label1.Location = new System.Drawing.Point(191, 28);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(287, 37);
+            this.label1.Size = new System.Drawing.Size(488, 37);
             this.label1.TabIndex = 3;
-            this.label1.Text = "予約IDを入力してください";
+            this.label1.Text = "予約IDを入力し、表示ボタンを押してください";
             // 
             // reserveIdBox
             // 
-            this.reserveIdBox.Location = new System.Drawing.Point(319, 94);
+            this.reserveIdBox.Location = new System.Drawing.Point(306, 95);
             this.reserveIdBox.Name = "reserveIdBox";
             this.reserveIdBox.Size = new System.Drawing.Size(262, 27);
             this.reserveIdBox.TabIndex = 4;
@@ -98,7 +98,7 @@ namespace memberDB
             this.Controls.Add(this.reserveStatusButton);
             this.Name = "ReserveStatus";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "ReserveStatus";
+            this.Text = "予約表示";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

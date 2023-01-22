@@ -37,27 +37,27 @@ namespace memberDB
             // 
             // memberDeleteBox
             // 
-            this.memberDeleteBox.Location = new System.Drawing.Point(319, 138);
+            this.memberDeleteBox.Location = new System.Drawing.Point(274, 131);
             this.memberDeleteBox.Name = "memberDeleteBox";
-            this.memberDeleteBox.Size = new System.Drawing.Size(125, 27);
+            this.memberDeleteBox.Size = new System.Drawing.Size(210, 27);
             this.memberDeleteBox.TabIndex = 0;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Yu Gothic UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(204, 40);
+            this.label1.Font = new System.Drawing.Font("Yu Gothic UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(196, 50);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(364, 35);
+            this.label1.Size = new System.Drawing.Size(393, 37);
             this.label1.TabIndex = 1;
             this.label1.Text = "削除したい会員IDを入力して下さい";
             // 
             // backButton
             // 
-            this.backButton.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.backButton.Location = new System.Drawing.Point(131, 301);
+            this.backButton.Font = new System.Drawing.Font("Yu Gothic UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.backButton.Location = new System.Drawing.Point(146, 282);
             this.backButton.Name = "backButton";
-            this.backButton.Size = new System.Drawing.Size(94, 49);
+            this.backButton.Size = new System.Drawing.Size(101, 63);
             this.backButton.TabIndex = 2;
             this.backButton.Text = "戻る";
             this.backButton.UseVisualStyleBackColor = true;
@@ -65,10 +65,10 @@ namespace memberDB
             // 
             // memberDeleteButton
             // 
-            this.memberDeleteButton.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.memberDeleteButton.Location = new System.Drawing.Point(559, 301);
+            this.memberDeleteButton.Font = new System.Drawing.Font("Yu Gothic UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.memberDeleteButton.Location = new System.Drawing.Point(517, 273);
             this.memberDeleteButton.Name = "memberDeleteButton";
-            this.memberDeleteButton.Size = new System.Drawing.Size(94, 49);
+            this.memberDeleteButton.Size = new System.Drawing.Size(101, 63);
             this.memberDeleteButton.TabIndex = 3;
             this.memberDeleteButton.Text = "削除";
             this.memberDeleteButton.UseVisualStyleBackColor = true;

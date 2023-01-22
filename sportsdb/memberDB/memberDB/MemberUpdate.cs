@@ -2,6 +2,8 @@
 using System.Data;
 using System.Windows.Forms;
 using System.Data.SQLite;
+using System.Diagnostics;
+
 
 namespace memberDB
 {
@@ -45,12 +47,17 @@ namespace memberDB
                 {
                     //メッセージボックスの値の定義
                     int mi = int.Parse(memberIdBox.Text);
-                    //tourokudbの生成
-                    var dataTable = new DataTable();
+                    //datatableの生成
+                    DataTable dataTable = new DataTable();
                     //SQLの実行
                     //member_idと一致したデータを出力する
-                    var adapter = new SQLiteDataAdapter($"SELECT * FROM t_product WHERE member_id = {mi}", con);
+                    var adapter = new SQLiteDataAdapter($"SELECT * FROM t_product WHERE memberId = {mi}", con);
                     adapter.Fill(dataTable);
+                    
+                    
+                   // string a = dataTable;
+                    DataRow dr = dataTable.Rows[0];
+                   // Debug.Print(dataTable.Rows[""]);
                     //データの表示
                     dataGridView1.DataSource = dataTable;
                 }
