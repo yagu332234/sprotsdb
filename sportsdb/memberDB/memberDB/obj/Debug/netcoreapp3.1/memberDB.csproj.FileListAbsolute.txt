@@ -64,3 +64,4 @@ C:\Users\s20217016\Desktop\memberDB\memberDB\obj\Debug\netcoreapp3.1\memberDB.Me
 C:\Users\s20217016\Desktop\memberDB\memberDB\obj\Debug\netcoreapp3.1\memberDB.ReserveDelete.resources
 C:\Users\s20217016\Desktop\memberDB\memberDB\obj\Debug\netcoreapp3.1\memberDB.MemberStatus.resources
 C:\Users\s20217016\Desktop\memberDB\memberDB\obj\Debug\netcoreapp3.1\memberDB.ReserveStatus.resources
+C:\Users\s20217016\Desktop\memberDB\memberDB\obj\Debug\netcoreapp3.1\memberDB.DataBasePage.resources

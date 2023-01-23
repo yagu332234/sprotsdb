@@ -50,11 +50,11 @@ namespace memberDB
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Yu Gothic UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(261, 45);
+            this.label1.Location = new System.Drawing.Point(191, 50);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(190, 53);
+            this.label1.Size = new System.Drawing.Size(320, 48);
             this.label1.TabIndex = 1;
-            this.label1.Text = "スタート画面";
+            this.label1.Text = "HCSスポーツクラブ会員登録";
             // 
             // roginButton
             // 

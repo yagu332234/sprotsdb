@@ -18,6 +18,7 @@ namespace memberDB
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            //
             mainPage = new ApplicationContext();
             mainPage.MainForm = new StartScreen();
             Application.Run(mainPage);

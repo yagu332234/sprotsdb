@@ -39,7 +39,6 @@ namespace memberDB
         private void roginButtonClick(object sender, EventArgs e)
         {
             Debug.Print("a");
-            Console.WriteLine("a");
                 //入力されたIDを取得
                 string id = memberIdBox.Text;
             //入力されたpasswordを取得
@@ -75,17 +74,13 @@ namespace memberDB
                         adapter.Fill(dataTable);
                         Debug.Print("");
                     }
-                        /*
-               
-                    DialogResult t_Result = MessageBox.Show("登録削除しました", "登録完了", MessageBoxButtons.OK);
-                    //start画面遷移
-                    if (t_Result == DialogResult.OK)
-                    {
-                        SceneChange(sender, e);
-                    }
+
+                    //main画面を表示
+                    Program.mainPage.MainForm = new Main();
+                    Program.mainPage.MainForm.Show();
+                    //現在の画面を消す
+                    this.Close();
                 }
-                        */
-                    }
             }
         }
         /// <summary>
@@ -95,14 +90,20 @@ namespace memberDB
         /// <param name="e"></param>
         private void maskButtonClick(object sender, EventArgs e)
         {
+            //パスワードが隠れてなかったら
             if (passwordcheck == false)
             {
+                //変数をtrue
                 passwordcheck = true;
+                //米印にする
                 memberPasswordBox.PasswordChar = '*';
             }
+            //
             else
             {
+                //変数をfalse
                 passwordcheck = false;
+                //米印からもとに戻す
                 memberPasswordBox.PasswordChar = '\0';
             }
         }

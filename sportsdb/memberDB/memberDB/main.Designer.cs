@@ -37,6 +37,7 @@ namespace memberDB
             this.button5 = new System.Windows.Forms.Button();
             this.backButton = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
+            this.dbCriate = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -126,11 +127,22 @@ namespace memberDB
             this.button7.UseVisualStyleBackColor = true;
             this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
+            // dbCriate
+            // 
+            this.dbCriate.Location = new System.Drawing.Point(611, 363);
+            this.dbCriate.Name = "dbCriate";
+            this.dbCriate.Size = new System.Drawing.Size(130, 49);
+            this.dbCriate.TabIndex = 8;
+            this.dbCriate.Text = "データを作っていない方はこちら！";
+            this.dbCriate.UseVisualStyleBackColor = true;
+            this.dbCriate.Click += new System.EventHandler(this.dbCriateClick);
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.dbCriate);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.backButton);
             this.Controls.Add(this.button5);
@@ -157,5 +169,6 @@ namespace memberDB
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button backButton;
         private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button dbCriate;
     }
 }

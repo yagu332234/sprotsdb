@@ -121,5 +121,18 @@ namespace memberDB
                 con.Close();
             }
         }
+        /// <summary>
+        /// データベース作成画面へ遷移
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void dbCriateClick(object sender, EventArgs e)
+        {
+            //DataBasePage画面を表示
+            Program.mainPage.MainForm = new DataBasePage();
+            Program.mainPage.MainForm.Show();
+            //現在の画面を消す
+            this.Close();
+        }
     }
 }
