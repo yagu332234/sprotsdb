@@ -56,7 +56,7 @@ namespace memberDB
                     
                     
                    // string a = dataTable;
-                    DataRow dr = dataTable.Rows[0];
+                 //   DataRow dr = dataTable.Rows[0];
                    // Debug.Print(dataTable.Rows[""]);
                     //データの表示
                     dataGridView1.DataSource = dataTable;

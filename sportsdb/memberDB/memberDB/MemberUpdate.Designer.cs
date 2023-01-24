@@ -134,7 +134,7 @@ namespace memberDB
             // idButton
             // 
             this.idButton.Font = new System.Drawing.Font("Yu Gothic UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.idButton.Location = new System.Drawing.Point(394, 103);
+            this.idButton.Location = new System.Drawing.Point(394, 90);
             this.idButton.Name = "idButton";
             this.idButton.Size = new System.Drawing.Size(94, 46);
             this.idButton.TabIndex = 9;

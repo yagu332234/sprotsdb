@@ -34,9 +34,7 @@ namespace memberDB
             this.memberDeleteButton = new System.Windows.Forms.Button();
             this.memberUpdateButton = new System.Windows.Forms.Button();
             this.memberStatusButton = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
             this.backButton = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
             this.dbCriate = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -94,17 +92,6 @@ namespace memberDB
             this.memberStatusButton.UseVisualStyleBackColor = true;
             this.memberStatusButton.Click += new System.EventHandler(this.memberStatusButtonClick);
             // 
-            // button5
-            // 
-            this.button5.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button5.Location = new System.Drawing.Point(176, 337);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(180, 75);
-            this.button5.TabIndex = 5;
-            this.button5.Text = "会員データ作成";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
-            // 
             // backButton
             // 
             this.backButton.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
@@ -115,17 +102,6 @@ namespace memberDB
             this.backButton.Text = "戻る";
             this.backButton.UseVisualStyleBackColor = true;
             this.backButton.Click += new System.EventHandler(this.backButtonClick);
-            // 
-            // button7
-            // 
-            this.button7.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button7.Location = new System.Drawing.Point(389, 337);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(180, 75);
-            this.button7.TabIndex = 7;
-            this.button7.Text = "予約データ作成";
-            this.button7.UseVisualStyleBackColor = true;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // dbCriate
             // 
@@ -143,9 +119,7 @@ namespace memberDB
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.dbCriate);
-            this.Controls.Add(this.button7);
             this.Controls.Add(this.backButton);
-            this.Controls.Add(this.button5);
             this.Controls.Add(this.memberStatusButton);
             this.Controls.Add(this.memberUpdateButton);
             this.Controls.Add(this.memberDeleteButton);
@@ -166,9 +140,7 @@ namespace memberDB
         private System.Windows.Forms.Button memberDeleteButton;
         private System.Windows.Forms.Button memberUpdateButton;
         private System.Windows.Forms.Button memberStatusButton;
-        private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button backButton;
-        private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button dbCriate;
     }
 }
