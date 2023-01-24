@@ -77,19 +77,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\s20217016\\.nuget\\packages\\": {}
+    "C:\\Users\\Gx563\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\s20217016\\Desktop\\memberDB\\memberDB\\memberDB.csproj",
+      "projectUniqueName": "C:\\Users\\Gx563\\OneDrive\\デスクトップ\\memberDB\\memberDB\\memberDB.csproj",
       "projectName": "memberDB",
-      "projectPath": "C:\\Users\\s20217016\\Desktop\\memberDB\\memberDB\\memberDB.csproj",
-      "packagesPath": "C:\\Users\\s20217016\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\s20217016\\Desktop\\memberDB\\memberDB\\obj\\",
+      "projectPath": "C:\\Users\\Gx563\\OneDrive\\デスクトップ\\memberDB\\memberDB\\memberDB.csproj",
+      "packagesPath": "C:\\Users\\Gx563\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Gx563\\OneDrive\\デスクトップ\\memberDB\\memberDB\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\s20217016\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Gx563\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -130,12 +130,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.NETCore.App.Host.win-x64",
-            "version": "[3.1.25, 3.1.25]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
@@ -144,7 +138,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.408\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }
