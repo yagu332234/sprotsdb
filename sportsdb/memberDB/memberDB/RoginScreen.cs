@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Data;
 using System.Windows.Forms;
+using System.IO;
 using System.Data.SQLite;
 using System.Diagnostics;
 
@@ -14,10 +15,7 @@ namespace memberDB
         {
             InitializeComponent();
         }
-        /// <summary>
-        /// パスワードを隠す判定をする変数
-        /// </summary>
-        private bool passwordcheck = false;
+        
         /// <summary>
         /// 戻るボタン
         /// </summary>
@@ -38,43 +36,38 @@ namespace memberDB
         /// <param name="e"></param>
         private void roginButtonClick(object sender, EventArgs e)
         {
-            Debug.Print("a");
-                //入力されたIDを取得
-                string id = memberIdBox.Text;
-            //入力されたpasswordを取得
-            string pass = memberPasswordBox.Text;
-            using (SQLiteConnection con = new SQLiteConnection("Data Source=register.db"))
+            if (memberIdBox.Text==null || memberPasswordBox==null)
             {
+                MessageBox.Show("パスワードか名前が一致しません");
+            }
+            else
+            {
+                bool fault = true;
+                StreamReader sr = new StreamReader(@"c:\memberDB\" + "password.csv");
+                while (sr.Peek() > -1)
+                {
+                    string s = sr.ReadLine();
+                    string[] sArray = s.Split(",");
 
-                con.Open();
-                    using (SQLiteTransaction trans = con.BeginTransaction())
+                    if(sArray[1]==memberPasswordBox.Text && sArray[0] == memberIdBox.Text)
                     {
-                   
-                        SQLiteCommand cmd = con.CreateCommand();
-                        //条件
-
-                     //   cmd.CommandText = ($"SELECT memberId, memberPassword FROM t_product", con);
+                        fault = false;
                         
-                    Debug.Print(cmd.CommandText);
-                    if (memberIdBox.Text == cmd.CommandText)
-                    {
-                        Debug.Print("成功");
                     }
-                    else
-                    {
-                        Debug.Print("失敗");
-                    }
+                }
+                sr.Close();
 
-                    using (SQLiteConnection conection = new SQLiteConnection("Data Source=register.db"))
-                    {
-                        //registerdbの生成
-                        var dataTable = new DataTable();
-                        //SQLの実行
-                        var adapter = new SQLiteDataAdapter("SELECT * FROM t_product", conection);
-                        adapter.Fill(dataTable);
-                        Debug.Print("");
-                    }
+                if (fault == true)
+                {
+                    MessageBox.Show("パスワードが一致しませんでした");
+                    //テキストの値を空白にする
+                    memberIdBox.Text = "";
+                    //テキストの値を空白にする
+                    memberPasswordBox.Text = "";
 
+                }
+                else
+                {
                     //main画面を表示
                     Program.mainPage.MainForm = new Main();
                     Program.mainPage.MainForm.Show();
@@ -82,6 +75,9 @@ namespace memberDB
                     this.Close();
                 }
             }
+                  
+                
+            
         }
         /// <summary>
         /// パスワードを隠すボタン
@@ -90,22 +86,7 @@ namespace memberDB
         /// <param name="e"></param>
         private void maskButtonClick(object sender, EventArgs e)
         {
-            //パスワードが隠れてなかったら
-            if (passwordcheck == false)
-            {
-                //変数をtrue
-                passwordcheck = true;
-                //米印にする
-                memberPasswordBox.PasswordChar = '*';
-            }
-            //
-            else
-            {
-                //変数をfalse
-                passwordcheck = false;
-                //米印からもとに戻す
-                memberPasswordBox.PasswordChar = '\0';
-            }
+            memberPasswordBox.UseSystemPasswordChar = !memberPasswordBox.UseSystemPasswordChar;
         }
     }
 }

@@ -41,7 +41,7 @@ namespace memberDB
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Yu Gothic UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(329, 57);
+            this.label1.Location = new System.Drawing.Point(340, 51);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(125, 37);
             this.label1.TabIndex = 0;
@@ -50,7 +50,7 @@ namespace memberDB
             // reserveOptopnButton
             // 
             this.reserveOptopnButton.Font = new System.Drawing.Font("Yu Gothic UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.reserveOptopnButton.Location = new System.Drawing.Point(218, 147);
+            this.reserveOptopnButton.Location = new System.Drawing.Point(229, 141);
             this.reserveOptopnButton.Name = "reserveOptopnButton";
             this.reserveOptopnButton.Size = new System.Drawing.Size(140, 73);
             this.reserveOptopnButton.TabIndex = 1;
@@ -61,7 +61,7 @@ namespace memberDB
             // reserveDeleteButton
             // 
             this.reserveDeleteButton.Font = new System.Drawing.Font("Yu Gothic UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.reserveDeleteButton.Location = new System.Drawing.Point(433, 147);
+            this.reserveDeleteButton.Location = new System.Drawing.Point(444, 141);
             this.reserveDeleteButton.Name = "reserveDeleteButton";
             this.reserveDeleteButton.Size = new System.Drawing.Size(142, 73);
             this.reserveDeleteButton.TabIndex = 2;
@@ -72,7 +72,7 @@ namespace memberDB
             // reserveUpdateButton
             // 
             this.reserveUpdateButton.Font = new System.Drawing.Font("Yu Gothic UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.reserveUpdateButton.Location = new System.Drawing.Point(218, 272);
+            this.reserveUpdateButton.Location = new System.Drawing.Point(229, 266);
             this.reserveUpdateButton.Name = "reserveUpdateButton";
             this.reserveUpdateButton.Size = new System.Drawing.Size(140, 73);
             this.reserveUpdateButton.TabIndex = 3;
@@ -94,7 +94,7 @@ namespace memberDB
             // reserveStatusButton
             // 
             this.reserveStatusButton.Font = new System.Drawing.Font("Yu Gothic UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.reserveStatusButton.Location = new System.Drawing.Point(433, 272);
+            this.reserveStatusButton.Location = new System.Drawing.Point(444, 266);
             this.reserveStatusButton.Name = "reserveStatusButton";
             this.reserveStatusButton.Size = new System.Drawing.Size(142, 73);
             this.reserveStatusButton.TabIndex = 5;

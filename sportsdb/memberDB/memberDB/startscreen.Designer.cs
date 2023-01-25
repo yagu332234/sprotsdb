@@ -39,7 +39,7 @@ namespace memberDB
             // mainButton
             // 
             this.mainButton.Font = new System.Drawing.Font("Yu Gothic UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.mainButton.Location = new System.Drawing.Point(151, 138);
+            this.mainButton.Location = new System.Drawing.Point(210, 138);
             this.mainButton.Name = "mainButton";
             this.mainButton.Size = new System.Drawing.Size(167, 69);
             this.mainButton.TabIndex = 0;
@@ -50,7 +50,7 @@ namespace memberDB
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Yu Gothic UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(191, 50);
+            this.label1.Location = new System.Drawing.Point(243, 43);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(320, 48);
             this.label1.TabIndex = 1;
@@ -59,7 +59,7 @@ namespace memberDB
             // roginButton
             // 
             this.roginButton.Font = new System.Drawing.Font("Yu Gothic UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.roginButton.Location = new System.Drawing.Point(344, 138);
+            this.roginButton.Location = new System.Drawing.Point(444, 138);
             this.roginButton.Name = "roginButton";
             this.roginButton.Size = new System.Drawing.Size(167, 69);
             this.roginButton.TabIndex = 2;
@@ -70,7 +70,7 @@ namespace memberDB
             // exitButton
             // 
             this.exitButton.Font = new System.Drawing.Font("Yu Gothic UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.exitButton.Location = new System.Drawing.Point(151, 254);
+            this.exitButton.Location = new System.Drawing.Point(210, 254);
             this.exitButton.Name = "exitButton";
             this.exitButton.Size = new System.Drawing.Size(167, 69);
             this.exitButton.TabIndex = 3;
@@ -81,7 +81,7 @@ namespace memberDB
             // newRegisterButton
             // 
             this.newRegisterButton.Font = new System.Drawing.Font("Yu Gothic UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.newRegisterButton.Location = new System.Drawing.Point(344, 254);
+            this.newRegisterButton.Location = new System.Drawing.Point(444, 254);
             this.newRegisterButton.Name = "newRegisterButton";
             this.newRegisterButton.Size = new System.Drawing.Size(167, 69);
             this.newRegisterButton.TabIndex = 4;

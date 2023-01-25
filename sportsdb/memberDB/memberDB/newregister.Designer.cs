@@ -46,7 +46,7 @@ namespace memberDB
             // 
             // nameBox
             // 
-            this.nameBox.Location = new System.Drawing.Point(287, 90);
+            this.nameBox.Location = new System.Drawing.Point(320, 91);
             this.nameBox.MaxLength = 15;
             this.nameBox.Name = "nameBox";
             this.nameBox.Size = new System.Drawing.Size(196, 27);
@@ -54,7 +54,7 @@ namespace memberDB
             // 
             // housebox
             // 
-            this.housebox.Location = new System.Drawing.Point(287, 153);
+            this.housebox.Location = new System.Drawing.Point(320, 154);
             this.housebox.MaxLength = 100;
             this.housebox.Name = "housebox";
             this.housebox.Size = new System.Drawing.Size(196, 27);
@@ -74,7 +74,7 @@ namespace memberDB
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(214, 86);
+            this.label2.Location = new System.Drawing.Point(247, 87);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(52, 28);
             this.label2.TabIndex = 4;
@@ -84,7 +84,7 @@ namespace memberDB
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(214, 149);
+            this.label3.Location = new System.Drawing.Point(247, 150);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(52, 28);
             this.label3.TabIndex = 5;
@@ -94,7 +94,7 @@ namespace memberDB
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(184, 212);
+            this.label4.Location = new System.Drawing.Point(217, 213);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(92, 28);
             this.label4.TabIndex = 6;
@@ -104,7 +104,7 @@ namespace memberDB
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(184, 271);
+            this.label5.Location = new System.Drawing.Point(217, 272);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(92, 28);
             this.label5.TabIndex = 8;
@@ -112,7 +112,7 @@ namespace memberDB
             // 
             // passwordbox
             // 
-            this.passwordbox.Location = new System.Drawing.Point(287, 330);
+            this.passwordbox.Location = new System.Drawing.Point(320, 331);
             this.passwordbox.MaxLength = 100;
             this.passwordbox.Name = "passwordbox";
             this.passwordbox.Size = new System.Drawing.Size(196, 27);
@@ -122,7 +122,7 @@ namespace memberDB
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label6.Location = new System.Drawing.Point(191, 330);
+            this.label6.Location = new System.Drawing.Point(224, 331);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(85, 28);
             this.label6.TabIndex = 10;
@@ -141,7 +141,7 @@ namespace memberDB
             // 
             // phonebox
             // 
-            this.phonebox.Location = new System.Drawing.Point(287, 216);
+            this.phonebox.Location = new System.Drawing.Point(320, 217);
             this.phonebox.Mask = "99900-9990-0000";
             this.phonebox.Name = "phonebox";
             this.phonebox.Size = new System.Drawing.Size(196, 27);
@@ -149,7 +149,7 @@ namespace memberDB
             // 
             // birthdaybox
             // 
-            this.birthdaybox.Location = new System.Drawing.Point(287, 275);
+            this.birthdaybox.Location = new System.Drawing.Point(320, 276);
             this.birthdaybox.Mask = "0000年90月90日";
             this.birthdaybox.Name = "birthdaybox";
             this.birthdaybox.Size = new System.Drawing.Size(196, 27);

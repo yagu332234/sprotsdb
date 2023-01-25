@@ -43,7 +43,7 @@ namespace memberDB
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Yu Gothic UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(88, 28);
+            this.label1.Location = new System.Drawing.Point(208, 27);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(405, 37);
             this.label1.TabIndex = 0;
@@ -82,6 +82,7 @@ namespace memberDB
             this.memberPasswordBox.Name = "memberPasswordBox";
             this.memberPasswordBox.Size = new System.Drawing.Size(194, 27);
             this.memberPasswordBox.TabIndex = 4;
+            this.memberPasswordBox.UseSystemPasswordChar = true;
             // 
             // roginButton
             // 

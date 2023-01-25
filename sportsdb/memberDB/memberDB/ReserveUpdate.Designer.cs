@@ -51,9 +51,9 @@ namespace memberDB
             // backButton
             // 
             this.backButton.Font = new System.Drawing.Font("Yu Gothic UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.backButton.Location = new System.Drawing.Point(26, 379);
+            this.backButton.Location = new System.Drawing.Point(26, 394);
             this.backButton.Name = "backButton";
-            this.backButton.Size = new System.Drawing.Size(146, 59);
+            this.backButton.Size = new System.Drawing.Size(146, 44);
             this.backButton.TabIndex = 3;
             this.backButton.Text = "戻る";
             this.backButton.UseVisualStyleBackColor = true;
@@ -62,9 +62,9 @@ namespace memberDB
             // updateButton
             // 
             this.updateButton.Font = new System.Drawing.Font("Yu Gothic UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.updateButton.Location = new System.Drawing.Point(576, 379);
+            this.updateButton.Location = new System.Drawing.Point(599, 394);
             this.updateButton.Name = "updateButton";
-            this.updateButton.Size = new System.Drawing.Size(150, 59);
+            this.updateButton.Size = new System.Drawing.Size(146, 44);
             this.updateButton.TabIndex = 4;
             this.updateButton.Text = "更新";
             this.updateButton.UseVisualStyleBackColor = true;

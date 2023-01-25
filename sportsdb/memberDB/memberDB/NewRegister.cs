@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 using System.Data.SQLite;
+using System.IO;
 
 namespace memberDB
 {
@@ -96,6 +97,9 @@ namespace memberDB
                 }
                 else
                 {
+                    StreamReader sr = new StreamReader(@"c:\memberDB\" + "password.csv");
+                    string s = passwordbox.Text;
+
                     using (SQLiteConnection con = new SQLiteConnection("Data Source=register.db"))
                     {
                         con.Open();
@@ -125,6 +129,8 @@ namespace memberDB
                             cmd.ExecuteNonQuery();
                             //コミット
                             trans.Commit();
+
+                            
 
                             
                         }

@@ -61,7 +61,7 @@ namespace memberDB
             // backButton
             // 
             this.backButton.Font = new System.Drawing.Font("Yu Gothic UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.backButton.Location = new System.Drawing.Point(99, 356);
+            this.backButton.Location = new System.Drawing.Point(61, 358);
             this.backButton.Name = "backButton";
             this.backButton.Size = new System.Drawing.Size(114, 60);
             this.backButton.TabIndex = 2;

@@ -36,15 +36,18 @@ namespace memberDB
         {
             using (SQLiteConnection con = new SQLiteConnection("Data Source=register.db"))
             {
-               
+
                 if (memberIdBox.Text == string.Empty)
                 {
 
                     MessageBox.Show("数字を入力してください");
-                }
 
+                }
                 else
                 {
+                    Debug.Print("a");
+
+
                     //メッセージボックスの値の定義
                     int mi = int.Parse(memberIdBox.Text);
                     //datatableの生成
@@ -53,16 +56,18 @@ namespace memberDB
                     //member_idと一致したデータを出力する
                     var adapter = new SQLiteDataAdapter($"SELECT * FROM t_product WHERE memberId = {mi}", con);
                     adapter.Fill(dataTable);
-                    
-                    
-                   // string a = dataTable;
-                 //   DataRow dr = dataTable.Rows[0];
-                   // Debug.Print(dataTable.Rows[""]);
-                    //データの表示
                     dataGridView1.DataSource = dataTable;
+                    
                 }
+                int cnt = dataGridView1.Rows.Count;
+                if (cnt == 0)
+                    {
+                        MessageBox.Show("その番号は存在しません");
+                      
+                    }
+
             }
-           
+
         }
         /// <summary>
         /// 更新処理
