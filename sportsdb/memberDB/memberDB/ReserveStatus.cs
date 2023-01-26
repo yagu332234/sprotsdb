@@ -10,7 +10,11 @@ namespace memberDB
         {
             InitializeComponent();
         }
-
+        /// <summary>
+        /// 予約表示するボタン
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void reserveStatusButtonClick(object sender, EventArgs e)
         {
             using (SQLiteConnection con = new SQLiteConnection("Data Source=reserve.db"))
@@ -39,7 +43,11 @@ namespace memberDB
                 }
             }
         }
-
+        /// <summary>
+        /// 戻るボタン
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void backButtonClick(object sender, EventArgs e)
         {
             //ReserveUpdate画面を表示

@@ -31,7 +31,7 @@ namespace memberDB
         /// <param name="e"></param>
         private void updateButtonClick(object sender, EventArgs e)
         {
-
+            //ダイアログ表示
             DialogResult result = MessageBox.Show("本当にこの内容更新してよろしいですか？", "警告", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
             if (result == DialogResult.Yes)
             {

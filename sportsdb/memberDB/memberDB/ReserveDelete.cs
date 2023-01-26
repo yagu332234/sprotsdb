@@ -18,17 +18,19 @@ namespace memberDB
         /// <param name="e"></param>
         private void backButtonClick(object sender, EventArgs e)
         {
-            //MemberStatus画面を表示
-            Program.mainPage.MainForm = new ReserveOption();
-            Program.mainPage.MainForm.Show();
-            //現在の画面を消す
-            this.Close();
+            //シーン切り替え
+            SceneChange(sender, e);
         }
+        /// <summary>
+        /// シーン切り替えの処理
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void SceneChange(object sender, EventArgs e)
         {
 
-            //start画面を表示
-            Program.mainPage.MainForm = new StartScreen();
+            //ReserveOption画面を表示
+            Program.mainPage.MainForm = new ReserveOption();
             Program.mainPage.MainForm.Show();
             //現在の画面を消す
             this.Close();
@@ -91,14 +93,11 @@ namespace memberDB
                     }
                 }
                 DialogResult t_Result = MessageBox.Show("予約削除しました", "予約削除完了", MessageBoxButtons.OK);
-                //start画面遷移
+                //ReserveOption画面遷移
                 if (t_Result == DialogResult.OK)
                 {
-                    //ReserveOption画面を表示
-                    Program.mainPage.MainForm = new ReserveOption();
-                    Program.mainPage.MainForm.Show();
-                    //現在の画面を消す
-                    this.Close();
+                    //シーン切り替え
+                    SceneChange(sender, e);
                 }
             }
         }

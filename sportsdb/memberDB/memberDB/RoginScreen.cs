@@ -36,10 +36,12 @@ namespace memberDB
         /// <param name="e"></param>
         private void roginButtonClick(object sender, EventArgs e)
         {
+            //もしIDかパスワードが入力されてなかったら
             if (memberIdBox.Text==null || memberPasswordBox==null)
             {
                 MessageBox.Show("パスワードか名前が一致しません");
             }
+            //IDとパスワードが一致したら
             else
             {
                 bool fault = true;
@@ -57,6 +59,7 @@ namespace memberDB
                 }
                 sr.Close();
 
+                //パスワードが一致しなかったら
                 if (fault == true)
                 {
                     MessageBox.Show("パスワードが一致しませんでした");
