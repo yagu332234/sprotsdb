@@ -36,17 +36,19 @@ namespace memberDB
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
+            this.reserveEvent = new System.Windows.Forms.ComboBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Yu Gothic UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(189, 50);
+            this.label1.Location = new System.Drawing.Point(141, 44);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(485, 37);
+            this.label1.Size = new System.Drawing.Size(591, 37);
             this.label1.TabIndex = 0;
-            this.label1.Text = "更新する予約氏名と日付を選択してください";
+            this.label1.Text = "更新する予約氏名を入力し更新内容を選んでください";
             // 
             // backButton
             // 
@@ -81,7 +83,7 @@ namespace memberDB
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Yu Gothic UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(189, 126);
+            this.label2.Location = new System.Drawing.Point(141, 126);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(125, 37);
             this.label2.TabIndex = 6;
@@ -103,11 +105,36 @@ namespace memberDB
             this.monthCalendar1.Name = "monthCalendar1";
             this.monthCalendar1.TabIndex = 9;
             // 
+            // reserveEvent
+            // 
+            this.reserveEvent.FormattingEnabled = true;
+            this.reserveEvent.Items.AddRange(new object[] {
+            "ランニング",
+            "水泳",
+            "ヨガ",
+            "筋トレ"});
+            this.reserveEvent.Location = new System.Drawing.Point(292, 191);
+            this.reserveEvent.Name = "reserveEvent";
+            this.reserveEvent.Size = new System.Drawing.Size(223, 28);
+            this.reserveEvent.TabIndex = 10;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Yu Gothic UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label4.Location = new System.Drawing.Point(141, 180);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(125, 37);
+            this.label4.TabIndex = 11;
+            this.label4.Text = "予約種目";
+            // 
             // ReserveUpdate
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.reserveEvent);
             this.Controls.Add(this.monthCalendar1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -132,5 +159,7 @@ namespace memberDB
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.MonthCalendar monthCalendar1;
+        private System.Windows.Forms.ComboBox reserveEvent;
+        private System.Windows.Forms.Label label4;
     }
 }

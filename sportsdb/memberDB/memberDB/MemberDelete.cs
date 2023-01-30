@@ -52,19 +52,19 @@ namespace memberDB
                     {
                         SQLiteCommand cmd = con.CreateCommand();
                         //条件
-                        cmd.CommandText = "DELETE FROM t_product WHERE memberId = @Mid";
+                        cmd.CommandText = "DELETE FROM t_product WHERE memberName = @MemberName";
                         //パラメータセット
-                        cmd.Parameters.Add("Mid", System.Data.DbType.Int64);
+                        cmd.Parameters.Add("MemberName", System.Data.DbType.String);
                         //削除
-                        cmd.Parameters["Mid"].Value = int.Parse(memberDeleteBox.Text);
+                        cmd.Parameters["MemberName"].Value = memberDeleteBox.Text;
                         cmd.ExecuteNonQuery();
                         //コミット
                         trans.Commit();
                     }
                 }
-                DialogResult t_Result = MessageBox.Show("登録削除しました", "登録完了", MessageBoxButtons.OK);
+                DialogResult tResult = MessageBox.Show("登録削除しました", "登録完了", MessageBoxButtons.OK);
                 //画面遷移
-                if (t_Result == DialogResult.OK)
+                if (tResult == DialogResult.OK)
                 {
                     //画面切り替え
                     SceneChange(sender, e);

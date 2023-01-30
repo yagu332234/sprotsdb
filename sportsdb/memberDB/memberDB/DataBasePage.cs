@@ -27,7 +27,7 @@ namespace memberDB
                     using (SQLiteCommand command = con.CreateCommand())
                     {
                         command.CommandText =
-                            "create table t_product(memberId INTEGER  PRIMARY KEY AUTOINCREMENT, memberName　FORREIGN KEY(memberName) REFERENCES t_Product(memberName) TEXT, memberHouse TEXT, memberPhone TEXT, memberBirthday TEXT, memberPassword TEXT)";
+                            "create table t_product(memberId INTEGER  PRIMARY KEY AUTOINCREMENT, memberName　TEXT, memberHouse TEXT, memberPhone TEXT, memberBirthday TEXT, memberPassword TEXT)";
                         command.ExecuteNonQuery();
                     }
                     con.Close();
@@ -52,7 +52,7 @@ namespace memberDB
                     using (SQLiteCommand command = con.CreateCommand())
                     {
                         command.CommandText =
-                            "create table reserveProduct(memberReserveId INTEGER  PRIMARY KEY AUTOINCREMENT, memberId INTEGER, day TEXT)";
+                            "create table reserveProduct(memberReserveId INTEGER  PRIMARY KEY AUTOINCREMENT, memberName TEXT, reserveEvent TEXT, day TEXT)";
                         command.ExecuteNonQuery();
                     }
                     con.Close();

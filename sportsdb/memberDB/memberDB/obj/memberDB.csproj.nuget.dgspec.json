@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Gx563\\OneDrive\\ドキュメント\\sprotsdb\\sportsdb\\memberDB\\memberDB\\memberDB.csproj": {}
+    "C:\\Users\\Gx563\\OneDrive\\デスクトップ\\G2A227矢口元輝\\memberDB\\memberDB\\memberDB.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Gx563\\OneDrive\\ドキュメント\\sprotsdb\\sportsdb\\memberDB\\memberDB\\memberDB.csproj": {
+    "C:\\Users\\Gx563\\OneDrive\\デスクトップ\\G2A227矢口元輝\\memberDB\\memberDB\\memberDB.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Gx563\\OneDrive\\ドキュメント\\sprotsdb\\sportsdb\\memberDB\\memberDB\\memberDB.csproj",
+        "projectUniqueName": "C:\\Users\\Gx563\\OneDrive\\デスクトップ\\G2A227矢口元輝\\memberDB\\memberDB\\memberDB.csproj",
         "projectName": "memberDB",
-        "projectPath": "C:\\Users\\Gx563\\OneDrive\\ドキュメント\\sprotsdb\\sportsdb\\memberDB\\memberDB\\memberDB.csproj",
+        "projectPath": "C:\\Users\\Gx563\\OneDrive\\デスクトップ\\G2A227矢口元輝\\memberDB\\memberDB\\memberDB.csproj",
         "packagesPath": "C:\\Users\\Gx563\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Gx563\\OneDrive\\ドキュメント\\sprotsdb\\sportsdb\\memberDB\\memberDB\\obj\\",
+        "outputPath": "C:\\Users\\Gx563\\OneDrive\\デスクトップ\\G2A227矢口元輝\\memberDB\\memberDB\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Gx563\\AppData\\Roaming\\NuGet\\NuGet.Config",

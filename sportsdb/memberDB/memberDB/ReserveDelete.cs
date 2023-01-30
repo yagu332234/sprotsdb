@@ -35,39 +35,7 @@ namespace memberDB
             //現在の画面を消す
             this.Close();
         }
-        /// <summary>
-        /// 予約表示
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void reservebuttonClick(object sender, EventArgs e)
-        {
-            using (SQLiteConnection con = new SQLiteConnection("Data Source=reserve.db"))
-            {
-                /*
-                 *  "create table reserveProduct(memberReserveId INTEGER  PRIMARY KEY AUTOINCREMENT, memberId INTEGER, day TEXT)";
-                */
-                if (reserveIdBox.Text == string.Empty)
-                {
-
-                    MessageBox.Show("数字を入力してください");
-                }
-
-                else
-                {
-                    //メッセージボックスの値の定義
-                    int mi = int.Parse(reserveIdBox.Text);
-                    //reservedbの生成
-                    var dataTable = new DataTable();
-                    //SQLの実行
-                    //member_idと一致したデータを出力する
-                    var adapter = new SQLiteDataAdapter($"SELECT * FROM reserveProduct WHERE memberReserveId = {mi}", con);
-                    adapter.Fill(dataTable);
-                    //データの表示
-                    reserveGridView.DataSource = dataTable;
-                }
-            }
-        }
+       
 
         private void reserveDliteButtonClick(object sender, EventArgs e)
         {
@@ -82,19 +50,19 @@ namespace memberDB
                     {
                         SQLiteCommand cmd = con.CreateCommand();
                         //条件
-                        cmd.CommandText = "DELETE FROM reserveProduct WHERE reserveId = @reserveid";
+                        cmd.CommandText = "DELETE FROM reserveProduct WHERE memberName = @MemberName";
                         //パラメータセット
-                        cmd.Parameters.Add("reserveid", System.Data.DbType.Int64);
+                        cmd.Parameters.Add("MemberName", System.Data.DbType.String);
                         //削除
-                        cmd.Parameters["reserveid"].Value = int.Parse(reserveIdBox.Text);
+                        cmd.Parameters["MemberName"].Value = reserveIdBox.Text;
                         cmd.ExecuteNonQuery();
                         //コミット
                         trans.Commit();
                     }
                 }
-                DialogResult t_Result = MessageBox.Show("予約削除しました", "予約削除完了", MessageBoxButtons.OK);
+                DialogResult tResult = MessageBox.Show("予約削除しました", "予約削除完了", MessageBoxButtons.OK);
                 //ReserveOption画面遷移
-                if (t_Result == DialogResult.OK)
+                if (tResult == DialogResult.OK)
                 {
                     //シーン切り替え
                     SceneChange(sender, e);

@@ -9,6 +9,7 @@ namespace memberDB
         public ReserveUpdate()
         {
             InitializeComponent();
+            reserveEvent.KeyPress += new KeyPressEventHandler(conboBoxKeyPress);
         }
         
         /// <summary>
@@ -43,9 +44,9 @@ namespace memberDB
                     {
                         SQLiteCommand cmd = con.CreateCommand();
                         //インサート
-                        cmd.CommandText = "UPDATE reserveProduct set day = @Day WHERE memberReserveId = @MemberReserveId";
+                        cmd.CommandText = "UPDATE reserveProduct set day = @Day WHERE memberName = @MemberName";
                         //パラメータセット
-                        cmd.Parameters.Add("MemberReserveId", System.Data.DbType.Int64);
+                        cmd.Parameters.Add("MemberName", System.Data.DbType.Int64);
                         cmd.Parameters.Add("Day", System.Data.DbType.String);
                         //データ追加
                         cmd.Parameters["MemberReserveId"].Value = int.Parse(memberIdBox.Text);
@@ -63,6 +64,10 @@ namespace memberDB
 
                 }
             }
+        }
+        private void conboBoxKeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = true;
         }
     }
 }

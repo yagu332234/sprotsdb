@@ -48,9 +48,9 @@ namespace memberDB
             this.label1.Font = new System.Drawing.Font("Yu Gothic UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.Location = new System.Drawing.Point(196, 50);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(393, 37);
+            this.label1.Size = new System.Drawing.Size(367, 37);
             this.label1.TabIndex = 1;
-            this.label1.Text = "削除したい会員IDを入力して下さい";
+            this.label1.Text = "削除したい氏名を入力して下さい";
             // 
             // backButton
             // 
