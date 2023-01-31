@@ -99,7 +99,7 @@ namespace memberDB
                 else
                 {
                     //パス指定
-                    StreamWriter streamWriter = new StreamWriter(@"C:\Users\Gx563\OneDrive\デスクトップ\G2A227矢口元輝\memberDB\" + "password.csv",true);
+                    StreamWriter streamWriter = new StreamWriter(@"K:\科目\10_GP演習\最終提出物フォルダ\システム\G2A227矢口元輝\" + "password.csv",true);
                     //idとパスワード取得
                     string idPassword= nameBox.Text +","+ passwordbox.Text;
                     //idとパスワードをテキストに書く

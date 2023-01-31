@@ -39,7 +39,7 @@ namespace memberDB
             if (result == DialogResult.Yes)
             {
                 //パス指定
-                StreamWriter streamWriter = new StreamWriter(@"C:\Users\Gx563\OneDrive\デスクトップ\G2A227矢口元輝\memberDB\" + "password.csv", true);
+                StreamWriter streamWriter = new StreamWriter(@"K:\科目\10_GP演習\最終提出物フォルダ\システム\G2A227矢口元輝\" + "password.csv", true);
                 //氏名とパスワード取得
                 string idPassword = memberNameBox.Text + "," + memberPassBox.Text;
                 //氏名とパスワードをテキストに書く

@@ -32,7 +32,7 @@ namespace memberDB
             this.label1 = new System.Windows.Forms.Label();
             this.backButton = new System.Windows.Forms.Button();
             this.updateButton = new System.Windows.Forms.Button();
-            this.memberIdBox = new System.Windows.Forms.TextBox();
+            this.memberNameBox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
@@ -72,12 +72,12 @@ namespace memberDB
             this.updateButton.UseVisualStyleBackColor = true;
             this.updateButton.Click += new System.EventHandler(this.updateButtonClick);
             // 
-            // memberIdBox
+            // memberNameBox
             // 
-            this.memberIdBox.Location = new System.Drawing.Point(292, 137);
-            this.memberIdBox.Name = "memberIdBox";
-            this.memberIdBox.Size = new System.Drawing.Size(223, 27);
-            this.memberIdBox.TabIndex = 5;
+            this.memberNameBox.Location = new System.Drawing.Point(292, 137);
+            this.memberNameBox.Name = "memberNameBox";
+            this.memberNameBox.Size = new System.Drawing.Size(223, 27);
+            this.memberNameBox.TabIndex = 5;
             // 
             // label2
             // 
@@ -138,7 +138,7 @@ namespace memberDB
             this.Controls.Add(this.monthCalendar1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.memberIdBox);
+            this.Controls.Add(this.memberNameBox);
             this.Controls.Add(this.updateButton);
             this.Controls.Add(this.backButton);
             this.Controls.Add(this.label1);
@@ -155,7 +155,7 @@ namespace memberDB
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button backButton;
         private System.Windows.Forms.Button updateButton;
-        private System.Windows.Forms.TextBox memberIdBox;
+        private System.Windows.Forms.TextBox memberNameBox;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.MonthCalendar monthCalendar1;

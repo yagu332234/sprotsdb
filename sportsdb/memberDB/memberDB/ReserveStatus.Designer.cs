@@ -33,6 +33,8 @@ namespace memberDB
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.backButton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.memberNameBox = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -72,17 +74,36 @@ namespace memberDB
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Yu Gothic UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(191, 28);
+            this.label1.Location = new System.Drawing.Point(70, 27);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(492, 37);
+            this.label1.Size = new System.Drawing.Size(693, 37);
             this.label1.TabIndex = 3;
-            this.label1.Text = "表示ボタンを押すと予約データを確認できます";
+            this.label1.Text = "予約氏名を入力し表示ボタンを押すと予約データを確認できます";
+            // 
+            // memberNameBox
+            // 
+            this.memberNameBox.Location = new System.Drawing.Point(296, 104);
+            this.memberNameBox.Name = "memberNameBox";
+            this.memberNameBox.Size = new System.Drawing.Size(310, 27);
+            this.memberNameBox.TabIndex = 4;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Yu Gothic UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.Location = new System.Drawing.Point(128, 94);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(125, 37);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "予約氏名";
             // 
             // ReserveStatus
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.memberNameBox);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.backButton);
             this.Controls.Add(this.dataGridView1);
@@ -102,5 +123,7 @@ namespace memberDB
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button backButton;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox memberNameBox;
+        private System.Windows.Forms.Label label2;
     }
 }

@@ -53,9 +53,9 @@ namespace memberDB
                         SQLiteCommand cmd = con.CreateCommand();
                         //条件
                         cmd.CommandText = "DELETE FROM t_product WHERE memberName = @MemberName";
-                        //パラメータセット
+                        //  型設定
                         cmd.Parameters.Add("MemberName", System.Data.DbType.String);
-                        //削除
+                        //パラメータセット
                         cmd.Parameters["MemberName"].Value = memberDeleteBox.Text;
                         cmd.ExecuteNonQuery();
                         //コミット

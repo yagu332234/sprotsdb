@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "ddhEO+giBfmMunW+FT5Bx+0xGqrN9G5WQvpW4Gb9f8/J7NhwAW7L6tn6qNDdBP0B4WTo0bGjX211Dt0tTsrkyg==",
+  "dgSpecHash": "eO+qglcHvtttiL+tIZH7zkyCo7Xop2cg6pVuZS/xgjCAwdA2vkIM6fKiwV/4tC4rulY7L0q3t4HZ/bGS/IRvbg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Gx563\\OneDrive\\デスクトップ\\G2A227矢口元輝\\memberDB\\memberDB\\memberDB.csproj",
+  "projectFilePath": "C:\\Users\\s20217016\\Desktop\\memberDB\\memberDB\\memberDB.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Gx563\\.nuget\\packages\\stub.system.data.sqlite.core.netstandard\\1.0.116\\stub.system.data.sqlite.core.netstandard.1.0.116.nupkg.sha512",
-    "C:\\Users\\Gx563\\.nuget\\packages\\system.data.sqlite.core\\1.0.116\\system.data.sqlite.core.1.0.116.nupkg.sha512"
+    "C:\\Users\\s20217016\\.nuget\\packages\\stub.system.data.sqlite.core.netstandard\\1.0.116\\stub.system.data.sqlite.core.netstandard.1.0.116.nupkg.sha512",
+    "C:\\Users\\s20217016\\.nuget\\packages\\system.data.sqlite.core\\1.0.116\\system.data.sqlite.core.1.0.116.nupkg.sha512",
+    "C:\\Users\\s20217016\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.25\\microsoft.netcore.app.host.win-x64.3.1.25.nupkg.sha512"
   ],
   "logs": []
 }

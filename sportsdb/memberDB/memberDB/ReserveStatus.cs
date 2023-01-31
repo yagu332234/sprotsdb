@@ -17,15 +17,15 @@ namespace memberDB
         /// <param name="e"></param>
         private void reserveStatusButtonClick(object sender, EventArgs e)
         {
-            using (SQLiteConnection con = new SQLiteConnection("Data Source=reserve.db"))
+            using (SQLiteConnection conection = new SQLiteConnection("Data Source=reserve.db"))
             {
-                
+                string MemberName = memberNameBox.Text;
                
                     //reservedbの生成
                     var dataTable = new DataTable();
-                    //SQLの実行
-                    var adapter = new SQLiteDataAdapter($"SELECT * FROM reserveProduct ", con);
-                    adapter.Fill(dataTable);
+                //SQLの実行
+                SQLiteDataAdapter adapter = new SQLiteDataAdapter("SELECT * FROM reserveProduct WHERE reserveProduct.memberName" + " LIKE  '" + MemberName + "'", conection);
+                adapter.Fill(dataTable);
                     //データの表示
                     dataGridView1.DataSource = dataTable;
                 

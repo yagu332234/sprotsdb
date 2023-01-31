@@ -47,7 +47,7 @@ namespace memberDB
                 //氏名とパスワードが合ってるか確認する用の変数
                 bool fault = false;
                 //パス指定
-                StreamReader streamRender = new StreamReader(@"C:\Users\Gx563\OneDrive\デスクトップ\G2A227矢口元輝\memberDB\" + "password.csv");
+                StreamReader streamRender = new StreamReader(@"K:\科目\10_GP演習\最終提出物フォルダ\システム\G2A227矢口元輝\" + "password.csv");
 
                 //テキスト内に文字があったら
                 while (streamRender.Peek() > -1)

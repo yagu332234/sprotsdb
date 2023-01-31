@@ -35,6 +35,8 @@ namespace memberDB
             this.dataGridView = new System.Windows.Forms.DataGridView();
             this.memberStatusButton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.memberNameBox = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -68,17 +70,17 @@ namespace memberDB
             dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridView.DefaultCellStyle = dataGridViewCellStyle4;
-            this.dataGridView.Location = new System.Drawing.Point(242, 87);
+            this.dataGridView.Location = new System.Drawing.Point(242, 133);
             this.dataGridView.Name = "dataGridView";
             this.dataGridView.RowHeadersWidth = 51;
             this.dataGridView.RowTemplate.Height = 29;
-            this.dataGridView.Size = new System.Drawing.Size(431, 301);
+            this.dataGridView.Size = new System.Drawing.Size(431, 255);
             this.dataGridView.TabIndex = 1;
             // 
             // memberStatusButton
             // 
             this.memberStatusButton.Font = new System.Drawing.Font("Yu Gothic UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.memberStatusButton.Location = new System.Drawing.Point(93, 87);
+            this.memberStatusButton.Location = new System.Drawing.Point(93, 133);
             this.memberStatusButton.Name = "memberStatusButton";
             this.memberStatusButton.Size = new System.Drawing.Size(100, 50);
             this.memberStatusButton.TabIndex = 2;
@@ -90,17 +92,36 @@ namespace memberDB
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Yu Gothic UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(205, 18);
+            this.label1.Location = new System.Drawing.Point(122, 18);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(488, 37);
+            this.label1.Size = new System.Drawing.Size(635, 37);
             this.label1.TabIndex = 3;
-            this.label1.Text = "表示ボタンを押すと会員情報を確認できます";
+            this.label1.Text = "氏名を入力し表示ボタンを押すと会員情報を確認できます";
+            // 
+            // memberNameBox
+            // 
+            this.memberNameBox.Location = new System.Drawing.Point(242, 81);
+            this.memberNameBox.Name = "memberNameBox";
+            this.memberNameBox.Size = new System.Drawing.Size(431, 27);
+            this.memberNameBox.TabIndex = 4;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Yu Gothic UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.Location = new System.Drawing.Point(122, 71);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(71, 37);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "氏名";
             // 
             // MemberStatus
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.memberNameBox);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.memberStatusButton);
             this.Controls.Add(this.dataGridView);
@@ -121,5 +142,7 @@ namespace memberDB
         private System.Windows.Forms.DataGridView dataGridView;
         private System.Windows.Forms.Button memberStatusButton;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox memberNameBox;
+        private System.Windows.Forms.Label label2;
     }
 }

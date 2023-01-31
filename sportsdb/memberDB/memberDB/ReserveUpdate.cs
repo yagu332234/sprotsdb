@@ -19,6 +19,11 @@ namespace memberDB
         /// <param name="e"></param>
         private void backButtonClick(object sender, EventArgs e)
         {
+            SceneChange(sender,e);
+        }
+        private void SceneChange(object sender, EventArgs e)
+        {
+
             //ReserveOption画面を表示
             Program.mainPage.MainForm = new ReserveOption();
             Program.mainPage.MainForm.Show();
@@ -44,12 +49,14 @@ namespace memberDB
                     {
                         SQLiteCommand cmd = con.CreateCommand();
                         //インサート
-                        cmd.CommandText = "UPDATE reserveProduct set day = @Day WHERE memberName = @MemberName";
+                        cmd.CommandText = "UPDATE reserveProduct set memberName=@MemberName,reserveEvent=@ReserveEvent,day = @Day WHERE memberName = @MemberName";
                         //パラメータセット
-                        cmd.Parameters.Add("MemberName", System.Data.DbType.Int64);
+                        cmd.Parameters.Add("MemberName", System.Data.DbType.String);
+                        cmd.Parameters.Add("ReserveEvent", System.Data.DbType.String);
                         cmd.Parameters.Add("Day", System.Data.DbType.String);
                         //データ追加
-                        cmd.Parameters["MemberReserveId"].Value = int.Parse(memberIdBox.Text);
+                        cmd.Parameters["MemberName"].Value = memberNameBox.Text;
+                        cmd.Parameters["ReserveEvent"].Value = reserveEvent.Text;
                         cmd.Parameters["Day"].Value = monthCalendar1.SelectionStart.ToShortDateString();
 
                         cmd.ExecuteNonQuery();
@@ -57,14 +64,22 @@ namespace memberDB
                         trans.Commit();
 
                         //登録完了表示
-                        DialogResult = MessageBox.Show("予約更新が完了しました!", "予約更新完了", MessageBoxButtons.OK);
-                       
+                        DialogResult tResult = MessageBox.Show("予約更新が完了しました!", "予約更新完了", MessageBoxButtons.OK);
+                        if (tResult == DialogResult.OK)
+                        {
+                            SceneChange(sender, e);
+                        }
                     }
 
 
                 }
             }
         }
+        /// <summary>
+        /// コンボボックスの処理
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void conboBoxKeyPress(object sender, KeyPressEventArgs e)
         {
             e.Handled = true;
